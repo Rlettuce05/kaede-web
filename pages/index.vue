@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+  <ModalWindow />
 </template>
 
 <script>
