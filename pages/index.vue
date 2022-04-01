@@ -1,5 +1,5 @@
 <template>
-  <ModalWindow />
+  
 </template>
 
 <script>
