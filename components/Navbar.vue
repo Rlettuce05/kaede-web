@@ -3,13 +3,13 @@
     <b-container>
       <b-row>
         <b-col sm="3">
-          <nuxt-link>ABOUT</nuxt-link>
+          <nuxt-link to="/Abont">ABOUT</nuxt-link>
         </b-col>
         <b-col sm="3">
-          <nuxt-link>WORKS</nuxt-link>
+          <nuxt-link to="/Works">WORKS</nuxt-link>
         </b-col>
         <b-col sm="3">
-          <nuxt-link>CONTACT</nuxt-link>
+          <nuxt-link to="/Contact">CONTACT</nuxt-link>
         </b-col>
       </b-row>
     </b-container>
