@@ -4,7 +4,7 @@
     <div class="content">
       <div class="container">
         <h1 class="PageTitle">Contact</h1>
-        <hr class="col-5" >
+        <hr class="col-5">
       </div>
     </div>
   </div>
@@ -13,6 +13,7 @@
 <style scoped>
 hr {
   float: left;
+  background-color: black;
 }
 </style>
 
