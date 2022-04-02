@@ -5,7 +5,7 @@
 <script>
 import NavBar from '~/components/Navbar.vue'
 export default {
-  name: 'IndexPage',
+  name: 'ContactPage',
   components: {
     NavBar
   }
