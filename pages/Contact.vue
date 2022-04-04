@@ -2,18 +2,20 @@
   <div>
     <NavBar />
     <div class="content">
+      <h1 class="PageTitle">Contact</h1>
       <b-container>
-        <h1 class="PageTitle">Contact</h1>
-        <hr class="col-5">
+        <h2 class="Index">ご依頼について</h2>
+        <div class="TextBody">
+          <p>映像製作をしています。<br>依頼の際はぜひTwitterのダイレクトメッセージからお気軽に声をおかけください。</p>
+        </div>
       </b-container>
     </div>
   </div>
 </template>
 
 <style scoped>
-hr {
-  float: left;
-  background-color: black;
+.PageTitle {
+  text-align: center;
 }
 </style>
 
