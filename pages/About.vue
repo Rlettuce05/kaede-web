@@ -4,7 +4,6 @@
     <div class="content">
       <b-container>
         <h1 class="PageTitle">About</h1>
-        <hr class="col-5">
       </b-container>
     </div>
   </div>
