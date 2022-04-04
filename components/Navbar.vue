@@ -9,7 +9,7 @@
           <nuxt-link to="/Works" class="linktext">WORKS</nuxt-link>
         </b-col>
         <b-col cols="4">
-          <nuxt-link to="/Contact" class="linktext">COMMISSION</nuxt-link>
+          <nuxt-link to="/Commission" class="linktext">COMMISSION</nuxt-link>
         </b-col>
       </b-row>
     </b-container>
