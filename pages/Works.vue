@@ -1,6 +1,19 @@
 <template>
-  <NavBar />
+  <div>
+    <NavBar />
+    <div class="content">
+      <h1 class="PageTitle">Works</h1>
+      <b-container>
+      </b-container>
+    </div>
+  </div>
 </template>
+
+<style scoped>
+.content {
+  text-align: center;
+}
+</style>
 
 <script>
 import NavBar from '~/components/Navbar.vue'
