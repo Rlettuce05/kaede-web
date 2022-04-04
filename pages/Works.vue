@@ -10,7 +10,7 @@
 </template>
 
 <style scoped>
-.content {
+.PageTitle {
   text-align: center;
 }
 </style>
