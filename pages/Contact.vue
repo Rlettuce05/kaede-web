@@ -2,10 +2,10 @@
   <div>
     <NavBar />
     <div class="content">
-      <div class="container">
+      <b-container>
         <h1 class="PageTitle">Contact</h1>
         <hr class="col-5">
-      </div>
+      </b-container>
     </div>
   </div>
 </template>
