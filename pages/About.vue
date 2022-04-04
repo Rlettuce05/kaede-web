@@ -2,17 +2,16 @@
   <div>
     <NavBar />
     <div class="content">
+      <h1 class="PageTitle">About</h1>
       <b-container>
-        <h1 class="PageTitle">About</h1>
       </b-container>
     </div>
   </div>
 </template>
 
 <style scoped>
-hr {
-  float: left;
-  background-color: black;
+.content {
+  text-align: center;
 }
 </style>
 
