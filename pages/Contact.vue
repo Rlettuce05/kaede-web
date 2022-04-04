@@ -2,7 +2,7 @@
   <div>
     <NavBar />
     <div class="content">
-      <h1 class="PageTitle">Contact</h1>
+      <h1 class="PageTitle">Commission</h1>
       <b-container>
         <h2 class="Index">ご依頼について</h2>
         <div class="TextBody">
