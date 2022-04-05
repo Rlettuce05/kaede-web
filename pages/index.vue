@@ -4,7 +4,7 @@
       <div class="iconcont">
         <b-img src="../static/icon.jpeg"></b-img>
       </div>
-      <b-row class="pagwlinks-row">
+      <b-row class="pagelinks-row">
         <b-col class="pagelinks-col">
           <b-btn squared class="pagelinks" href="Works">WORKS</b-btn>
         </b-col>
