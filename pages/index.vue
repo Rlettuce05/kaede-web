@@ -6,13 +6,13 @@
       </div>
       <b-row class="pagwlinks-row">
         <b-col class="pagelinks-col">
-          <b-btn class="pagelinks" href="Works">WORKS</b-btn>
+          <b-btn squared class="pagelinks" href="Works">WORKS</b-btn>
         </b-col>
         <b-col class="pagelinks-col">
-          <b-btn class="pagelinks" href="About">ABOUT</b-btn>
+          <b-btn squared class="pagelinks" href="About">ABOUT</b-btn>
         </b-col>
         <b-col class="pagelinks-col">
-          <b-btn class="pagelinks" href="Commission">COMMISSION</b-btn>
+          <b-btn squared class="pagelinks" href="Commission">COMMISSION</b-btn>
         </b-col>
       </b-row>
     </b-container>
