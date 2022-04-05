@@ -15,6 +15,8 @@
           <b-btn squared class="pagelinks" href="Commission">COMMISSION</b-btn>
         </b-col>
       </b-row>
+      <b-row class="links-row">
+      </b-row>
     </b-container>
   </div>
 </template>
