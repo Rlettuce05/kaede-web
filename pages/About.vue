@@ -6,7 +6,7 @@
       <b-container>
         <b-row>
           <b-col col="8">
-            <p><!--ここに紹介文--></p>
+            <p>3DCGやmotiongraphicsを用いてグラフィックを意識した映像を制作しています。</p>
           </b-col>
           <b-col col="4">
             <b-img src="../static/icon.jpeg"></b-img>
