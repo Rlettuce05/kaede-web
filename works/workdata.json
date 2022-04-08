@@ -1,51 +1,44 @@
 [
 	{
-		"id": "Ghost dinner party",
+		"id": "GhostDinnerParty",
 		"title": "Ghost dinner party",
 		"tag": "CG",
 		"link": "https://www.youtube.com/watch?v=cSyJ0KwJqrs",
 		"img": ""
 	},
 	{
-		"id": "Malik Bash",
+		"id": "MalikBash",
 		"title": "Malik Bash",
 		"tag": "CG",
 		"link": "https://www.youtube.com/watch?v=6_VPndlXjzc",
 		"img": ""
 	},
 	{
-		"id": "",
-		"title": "",
+		"id": "Initialized",
+		"title": "Initialized",
 		"tag": "XFD",
-		"link": "",
+		"link": "https://www.youtube.com/watch?v=hkGKqvrtu8U",
 		"img": ""
 	},
 	{
-		"id": "",
-		"title": "",
+		"id": "IllustYeah!",
+		"title": "IllustYeah!",
 		"tag": "XFD",
-		"link": "",
+		"link": "https://www.youtube.com/watch?v=89Bg1SKuOD8",
 		"img": ""
 	},
 	{
-		"id": "",
-		"title": "",
+		"id": "Ivory",
+		"title": "アイボリー",
 		"tag": "MV",
-		"link": "",
+		"link": "https://www.youtube.com/watch?v=0puparCl30k",
 		"img": ""
 	},
 	{
-		"id": "",
-		"title": "",
+		"id": "AllAboutLife",
+		"title": "命ばっかり feat. Flower,結月ゆかり",
 		"tag": "MV",
-		"link": "",
-		"img": ""
-	},
-	{
-		"id": "",
-		"title": "",
-		"tag": "MV",
-		"link": "",
+		"link": "https://www.youtube.com/watch?v=nIHx-BCZdtE",
 		"img": ""
 	}
 ]
