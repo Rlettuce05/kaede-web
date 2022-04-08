@@ -9,9 +9,11 @@
             <a v-bind:href="work.link">
               <b-img v-bind:src="work.img"></b-img>
             </a>
-            <div class="title">
-              {{ work.title }}
-            </div>
+            <dev v-if="MouseOver">
+              <div class="title">
+                {{ work.title }}
+              </div>
+            </dev>
           </b-col>
         </b-row>
       </b-container>
