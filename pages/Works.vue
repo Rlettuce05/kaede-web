@@ -6,14 +6,16 @@
       <b-container>
         <div id="app">
           <b-row>
-            <b-col col="4" v-for="work in works" :key="work.id">
-              <a v-bind:href="work.link">
-                <b-img v-bind:src="work.img"></b-img>
-              </a>
-              <div class="title">
-                {{ work.title }}
-              </div>
-            </b-col>
+            <div v-for="work in works" :key="work.id">
+              <b-col  col="4">
+                <a v-bind:href="work.link">
+                  <b-img v-bind:src="work.img"></b-img>
+                </a>
+                <div class="title">
+                  {{ work.title }}
+                </div>
+              </b-col>
+            </div>
           </b-row>
         </div>
       </b-container>
