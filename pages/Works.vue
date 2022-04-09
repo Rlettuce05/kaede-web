@@ -44,4 +44,15 @@ export default {
     }
   }
 }
+new Vue({
+  el: '.title',
+  methods: {
+    mouseOverAction(){
+      this.hoverFlag = true
+    },
+    mouseLeaveAction(){
+      this.hoverFlag = false
+    }
+  }
+})
 </script>
