@@ -10,11 +10,11 @@
               <a v-bind:href="work.link">
                 <b-img v-bind:src="work.img"></b-img>
               </a>
-              <dev v-if="MouseOver(index)">
+              <div v-show="hoverFlag && index === hoverIndex">
                 <div class="title">
                   {{ work.title }}
                 </div>
-              </dev>
+              </div>
             </b-col>
           </b-row>
         </div>
