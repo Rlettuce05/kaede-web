@@ -32,13 +32,13 @@
 		"title": "アイボリー",
 		"tag": "MV",
 		"link": "https://www.youtube.com/watch?v=0puparCl30k",
-		"img": "~/works/ivory.png"
+		"img": "@/works/ivory.png"
 	},
 	{
 		"id": "LikeAHumanBeing",
 		"title": "人間らしい",
 		"tag": "MV",
 		"link": "https://www.youtube.com/watch?v=nIHx-BCZdtE",
-		"img": "~/works/likeahumanbeing.png"
+		"img": "@/works/likeahumanbeing.png"
 	}
 ]
