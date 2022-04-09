@@ -7,7 +7,7 @@
         <div id="app">
           <b-row>
             <div v-for="work in works" :key="work.id">
-              <b-col  col="4">
+              <b-col cols="4">
                 <a v-bind:href="work.link">
                   <b-img v-bind:src="work.img"></b-img>
                 </a>
