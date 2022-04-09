@@ -4,18 +4,20 @@
     <div class="content">
       <h1 class="PageTitle">Works</h1>
       <b-container>
-        <b-row>
-          <b-col col="4" v-for="work in works" :key="work.id">
-            <a v-bind:href="work.link">
-              <b-img v-bind:src="work.img"></b-img>
-            </a>
-            <dev v-if="MouseOver">
-              <div class="title">
-                {{ work.title }}
-              </div>
-            </dev>
-          </b-col>
-        </b-row>
+        <div id="app">
+          <b-row>
+            <b-col col="4" v-for="work in works" :key="work.id">
+              <a v-bind:href="work.link">
+                <b-img v-bind:src="work.img"></b-img>
+              </a>
+              <dev v-if="MouseOver">
+                <div class="title">
+                  {{ work.title }}
+                </div>
+              </dev>
+            </b-col>
+          </b-row>
+        </div>
       </b-container>
     </div>
   </div>
@@ -45,7 +47,7 @@ export default {
   }
 }
 new Vue({
-  el: '.title',
+  el: '#app',
   methods: {
     mouseOverAction(){
       this.hoverFlag = true
