@@ -6,11 +6,11 @@
       <b-container>
         <div id="app">
           <b-row>
-            <b-col col="4" v-for="work in works" :key="work.id">
+            <b-col col="4" v-for="(work, index) in works" :key="work.id">
               <a v-bind:href="work.link">
                 <b-img v-bind:src="work.img"></b-img>
               </a>
-              <dev v-if="MouseOver">
+              <dev v-if="MouseOver(index)">
                 <div class="title">
                   {{ work.title }}
                 </div>
@@ -33,6 +33,7 @@ b-container {
 </style>
 
 <script>
+import Vue from 'vue'
 import NavBar from '~/components/Navbar.vue'
 export default {
   name: 'WorksPage',
@@ -48,9 +49,14 @@ export default {
 }
 new Vue({
   el: '#app',
+  data:{
+    hoverFlag: false,
+    hoverIndex: null
+  },
   methods: {
-    mouseOverAction(){
-      this.hoverFlag = true
+    mouseOverAction(index){
+      this.hoverFlag = true,
+      this.hoverIndex = index
     },
     mouseLeaveAction(){
       this.hoverFlag = false
