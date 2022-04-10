@@ -9,7 +9,7 @@
             <div v-for="work in works" :key="work.id">
               <b-col cols="4">
                 <a v-bind:href="work.link">
-                  <b-img v-bind:src="work.img"></b-img>
+                  <b-img v-bind:src="require(`~/works/${ works.img }`)"></b-img>
                 </a>
                 <div class="title">
                   {{ work.title }}
