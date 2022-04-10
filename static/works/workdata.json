@@ -4,41 +4,41 @@
 		"title": "Ghost dinner party",
 		"tag": "CG",
 		"link": "https://www.youtube.com/watch?v=cSyJ0KwJqrs",
-		"img": "~/works/ghostdinnerparty.png"
+		"img": "ghostdinnerparty.png"
 	},
 	{
 		"id": "MalikBash",
 		"title": "Malik Bash",
 		"tag": "CG",
 		"link": "https://www.youtube.com/watch?v=6_VPndlXjzc",
-		"img": "~/works/malikbash.png"
+		"img": "malikbash.png"
 	},
 	{
 		"id": "Initialized",
 		"title": "Initialized",
 		"tag": "XFD",
 		"link": "https://www.youtube.com/watch?v=hkGKqvrtu8U",
-		"img": "~/works/initialized.png"
+		"img": "initialized.png"
 	},
 	{
 		"id": "IllustYeah!",
 		"title": "IllustYeah!",
 		"tag": "XFD",
 		"link": "https://www.youtube.com/watch?v=89Bg1SKuOD8",
-		"img": "~/works/illustyeah.png"
+		"img": "illustyeah.png"
 	},
 	{
 		"id": "Ivory",
 		"title": "アイボリー",
 		"tag": "MV",
 		"link": "https://www.youtube.com/watch?v=0puparCl30k",
-		"img": "~/works/ivory.png"
+		"img": "ivory.png"
 	},
 	{
 		"id": "LikeAHumanBeing",
 		"title": "人間らしい",
 		"tag": "MV",
 		"link": "https://www.youtube.com/watch?v=nIHx-BCZdtE",
-		"img": "~/works/likeahumanbeing.png"
+		"img": "likeahumanbeing.png"
 	}
 ]

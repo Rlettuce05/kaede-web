@@ -9,7 +9,7 @@
             <div v-for="work in works" :key="work.id">
               <b-col cols="4">
                 <a v-bind:href="work.link">
-                  <b-img v-bind:src="require(`~/works/${ works.img }`)"></b-img>
+                  <b-img :src="require(`@/static/works/${work.img}`)"></b-img>
                 </a>
                 <div class="title">
                   {{ work.title }}
@@ -40,7 +40,7 @@ export default {
     NavBar
   },
   asyncData() {
-    const works = require('~/works/workdata.json')
+    const works = require('~/static/works/workdata.json')
     return{
       works
     }
