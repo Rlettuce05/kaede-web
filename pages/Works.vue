@@ -30,6 +30,13 @@
 b-container {
   margin: 5%;
 }
+b-img {
+  height: 32%;
+  margin: 32%;
+}
+.title {
+  display: none;
+}
 </style>
 
 <script>
