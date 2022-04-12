@@ -28,6 +28,16 @@
 </template>
 
 <style scoped>
+.content {
+  text-align: center;
+}
+.pagelinks {
+  width: 200px;
+  padding: 3px;
+}
+.links {
+  font-size: 30px;
+}
 </style>
 
 <script>
