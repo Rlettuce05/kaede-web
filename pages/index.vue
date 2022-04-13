@@ -24,6 +24,7 @@
         </b-col>
       </b-row>
     </b-container>
+    <div class="background">
   </div>
 </template>
 
@@ -37,6 +38,15 @@
 }
 .links {
   font-size: 30px;
+}
+</style>
+<style>
+.background {
+  background-color: #333333;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 </style>
 
