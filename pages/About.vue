@@ -5,10 +5,10 @@
       <h1 class="PageTitle">About</h1>
       <b-container>
         <b-row>
-          <b-col col="8">
+          <b-col cols="8">
             <p>3DCGやmotiongraphicsを用いてグラフィックを意識した映像を制作しています。</p>
           </b-col>
-          <b-col col="4">
+          <b-col cols="4">
             <b-img src="../static/icon.jpeg"></b-img>
           </b-col>
         </b-row>
