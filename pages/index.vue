@@ -55,7 +55,7 @@ NavBar {
 </style>
 
 <script>
-import {BIcon, BIconYoutube, BIconTwitter} from 'bootstrap-vue'
+import { BIcon, BIconYoutube, BIconTwitter } from 'bootstrap-vue'
 export default {
   name: 'IndexPage',
   components: {
