@@ -67,9 +67,15 @@ export default {
       works
     }
   },
-  methods :{
+  data() {
+    hover: []
+  },
+  methods: {
     mouseover(index) {
-      
+      this.$set(this.hover, index, true)
+    },
+    mouseleave(index) {
+      this.$set(this.hover, index, false)
     }
   }
 }
