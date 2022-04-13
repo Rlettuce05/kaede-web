@@ -9,7 +9,9 @@
             <div v-for="work in works" :key="work.id">
               <b-col cols="4">
                 <a v-bind:href="work.link">
-                  <b-img :src="require(`@/static/works/${work.img}`)"></b-img>
+                  <div class="thumbnail">
+                    <b-img :src="require(`@/static/works/${work.img}`)"></b-img>
+                  </div>
                 </a>
                 <div class="title">
                   {{ work.title }}
@@ -30,9 +32,8 @@
 b-container {
   margin: 5%;
 }
-b-img {
+.thumbnail {
   height: 32%;
-  margin: 32%;
 }
 .title {
   display: none;
