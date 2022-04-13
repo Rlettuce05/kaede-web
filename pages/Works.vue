@@ -9,7 +9,7 @@
             <div v-for="work in works" :key="work.id">
               <b-col cols="4">
                 <a v-bind:href="work.link">
-                  <div class="thumbnail">
+                  <div class="thumbnail" @mouseover="mouseover()" @mouseleave="mouseleave()">
                     <b-img :src="require(`@/static/works/${work.img}`)"></b-img>
                   </div>
                 </a>
@@ -66,6 +66,7 @@ export default {
     return{
       works
     }
-  }
+  },
+  mouseover
 }
 </script>
