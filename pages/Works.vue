@@ -37,6 +37,20 @@ b-container {
 }
 .title {
   display: none;
+  z-index: 1;
+}
+@keyframes titleslidein {
+  from {
+    opacity: 0%;
+    position: absolute;
+    top: -7px;
+    font-size: 70%;
+  }
+  to {
+    opacity: 100%;
+    top: 1px;
+    font-size: 100%;
+  }
 }
 </style>
 
