@@ -41,6 +41,9 @@
 }
 </style>
 <style>
+NavBar {
+  position: fixed;
+}
 .background {
   background-color: #333333;
   position: fixed;
