@@ -25,6 +25,7 @@
       </b-row>
     </b-container>
     <div class="background">
+    </div>
   </div>
 </template>
 
