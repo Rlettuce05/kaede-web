@@ -1,6 +1,7 @@
 <template>
-  <div class="content">
-    <b-container>
+  <div>
+    <div class="background"></div>
+    <b-container class="content">
       <div class="iconcont">
         <b-img src="../static/icon.jpeg"></b-img>
       </div>
@@ -24,12 +25,13 @@
         </b-col>
       </b-row>
     </b-container>
-    <div class="background">
-    </div>
   </div>
 </template>
 
 <style scoped>
+.iconcont {
+  z-index: 1;
+}
 .content {
   text-align: center;
 }
@@ -40,17 +42,12 @@
 .links {
   font-size: 30px;
 }
-</style>
-<style>
-NavBar {
-  position: fixed;
-}
 .background {
   background-color: #333333;
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: 0;
 }
 </style>
 
