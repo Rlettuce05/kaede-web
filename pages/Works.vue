@@ -6,10 +6,10 @@
       <b-container>
         <div id="app">
           <b-row>
-            <div v-for="work in works" :key="work.id">
+            <div v-for="(work, index) in works" :key="work.id">
               <b-col cols="4">
                 <a v-bind:href="work.link">
-                  <div class="thumbnail" @mouseover="mouseover()" @mouseleave="mouseleave()">
+                  <div class="thumbnail" @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
                     <b-img :src="require(`@/static/works/${work.img}`)"></b-img>
                   </div>
                 </a>
@@ -67,6 +67,10 @@ export default {
       works
     }
   },
-  mouseover
+  methods :{
+    mouseover(index) {
+      
+    }
+  }
 }
 </script>
