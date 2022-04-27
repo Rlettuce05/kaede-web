@@ -1,10 +1,9 @@
 <template>
-  <div>
+  <div class="background">
     <b-container class="content">
       <div class="iconcont">
         <b-img src="../static/icon.jpeg"></b-img>
       </div>
-      <div class="background"></div>
       <b-row class="pagelinks-row">
         <b-col class="pagelinks-col">
           <b-btn squared class="pagelinks" href="Works">WORKS</b-btn>
