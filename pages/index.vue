@@ -1,7 +1,7 @@
 <template>
   <div class="background">
     <b-container class="content">
-      <div class="iconcont">
+      <div class="iconcont py-3">
         <b-img src="../static/icon.jpeg"></b-img>
       </div>
       <b-row class="pagelinks-row">
