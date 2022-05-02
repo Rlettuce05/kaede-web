@@ -1,7 +1,7 @@
 <template>
   <div class="background">
     <b-container class="content">
-      <div class="iconcont py-3">
+      <div class="iconcont">
         <b-img src="../static/icon.jpeg"></b-img>
       </div>
       <b-row class="pagelinks-row">
@@ -30,6 +30,7 @@
 <style scoped>
 .iconcont {
   z-index: 1;
+  padding: 10vh 0vw;
 }
 .content {
   text-align: center;
