@@ -1,8 +1,9 @@
 <template>
   <div>
-    <NavBar />
     <div class="content">
-      <div class="background"></div>
+      <div class="background">
+        <NavBar />
+      </div>
       <h1 class="PageTitle">Works</h1>
       <b-container>
         <div id="app">
@@ -39,7 +40,7 @@ b-container {
   margin: 5%;
 }
 .thumbnail {
-  width: 33vw;
+  width: 300px;
   height: auto;
 }
 .title {
