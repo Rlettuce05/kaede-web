@@ -6,21 +6,21 @@
       </div>
       <b-row class="pagelinks-row">
         <b-col class="pagelinks-col">
-          <b-btn squared class="pagelinks" href="Works">WORKS</b-btn>
+          <b-btn squared class="pagelinks btn btn-outline-light" href="Works">WORKS</b-btn>
         </b-col>
         <b-col class="pagelinks-col">
-          <b-btn squared class="pagelinks" href="About">ABOUT</b-btn>
+          <b-btn squared class="pagelinks btn btn-outline-light" href="About">ABOUT</b-btn>
         </b-col>
         <b-col class="pagelinks-col">
-          <b-btn squared class="pagelinks" href="Commission">COMMISSION</b-btn>
+          <b-btn squared class="pagelinks btn btn-outline-light" href="Commission">COMMISSION</b-btn>
         </b-col>
       </b-row>
       <b-row class="links-row mt-4">
         <b-col class="links-col">
-          <b-btn class="links" href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg"><b-icon icon="youtube"></b-icon></b-btn>
+          <b-btn class="links btn btn-outline-light" href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg"><b-icon icon="youtube"></b-icon></b-btn>
         </b-col>
         <b-col class="links-col">
-          <b-btn class="links" href="https://twitter.com/ka3de_KA"><b-icon icon="twitter"></b-icon></b-btn>
+          <b-btn class="links btn btn-outline-light" href="https://twitter.com/ka3de_KA"><b-icon icon="twitter"></b-icon></b-btn>
         </b-col>
       </b-row>
     </b-container>
