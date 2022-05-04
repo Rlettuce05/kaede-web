@@ -43,7 +43,6 @@
 .background {
   background-color: #333333;
   color: rgba(255, 255, 255, 0.8);
-  position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: 0;
