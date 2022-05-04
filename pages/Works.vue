@@ -9,8 +9,8 @@
             <div v-for="(work, index) in works" :key="work.id">
               <b-col cols="4">
                 <a v-bind:href="work.link">
-                  <div class="thumbnail" @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
-                    <b-img :src="require(`@/static/works/${work.img}`)"></b-img>
+                  <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
+                    <b-img :src="require(`@/static/works/${work.img}`)" class="thumbnail"></b-img>
                   </div>
                 </a>
                 <div class="title">
@@ -33,7 +33,8 @@ b-container {
   margin: 5%;
 }
 .thumbnail {
-  height: 32%;
+  width: 40vw;
+  height: auto;
 }
 .title {
   display: none;
