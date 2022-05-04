@@ -23,6 +23,13 @@
 .linktext {
   text-align: center;
 }
+.content {
+  background-color: black;
+  font-size: 25px;
+}
+.linktext {
+  color: white;
+}
 </style>
 
 <script>
