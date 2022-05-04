@@ -15,7 +15,7 @@
           <b-btn squared class="pagelinks" href="Commission">COMMISSION</b-btn>
         </b-col>
       </b-row>
-      <b-row class="links-row">
+      <b-row class="links-row mt-4">
         <b-col class="links-col">
           <b-btn class="links" href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg"><b-icon icon="youtube"></b-icon></b-btn>
         </b-col>
