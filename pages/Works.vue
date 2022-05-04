@@ -6,10 +6,10 @@
       <b-container>
         <div id="app">
           <b-row>
-            <div v-for="(work, index) in works" :key="work.id">
+            <div v-for="work in works" :key="work.id">
               <b-col cols="4">
                 <a v-bind:href="work.link">
-                  <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
+                  <div>
                     <b-img :src="require(`@/static/works/${work.img}`)" class="thumbnail"></b-img>
                   </div>
                 </a>
@@ -66,17 +66,6 @@ export default {
     const works = require('~/static/works/workdata.json')
     return{
       works
-    }
-  },
-  data() {
-    hover: []
-  },
-  methods: {
-    mouseover(index) {
-      this.$set(this.hover, index, true)
-    },
-    mouseleave(index) {
-      this.$set(this.hover, index, false)
     }
   }
 }
