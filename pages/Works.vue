@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="background"></div>
     <NavBar />
     <div class="content">
+      <div class="background"></div>
       <h1 class="PageTitle">Works</h1>
       <b-container>
         <div id="app">
