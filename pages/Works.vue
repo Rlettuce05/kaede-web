@@ -26,6 +26,10 @@
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+.content {
+  font-family: 'Akshar', sans-serif;
+}
 .PageTitle {
   text-align: center;
 }

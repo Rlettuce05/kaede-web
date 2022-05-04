@@ -28,6 +28,10 @@
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+.content {
+  font-family: 'Akshar', sans-serif;
+}
 .iconcont {
   z-index: 1;
   padding: 9vh 0vw 5vh 0vw;
