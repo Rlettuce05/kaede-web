@@ -5,11 +5,11 @@
       <h1 class="PageTitle">About</h1>
       <b-container>
         <b-row>
-          <b-col cols="8">
+          <b-col cols="7">
             <p>3DCGやmotiongraphicsを用いてグラフィックを意識した映像を制作しています。</p>
           </b-col>
-          <b-col cols="4">
-            <b-img src="../static/icon.jpeg"></b-img>
+          <b-col cols="5">
+            <b-img class="iconimg" src="../static/icon.jpeg"></b-img>
           </b-col>
         </b-row>
       </b-container>
@@ -20,6 +20,10 @@
 <style scoped>
 .PageTitle {
   text-align: center;
+}
+.iconimg {
+  width: 40vw;
+  height: auto;
 }
 </style>
 
