@@ -19,13 +19,11 @@
 <style scoped>
 .content {
   text-align: center;
+  background-color: black;
+  font-size: 25px;
 }
 .linktext {
   text-align: center;
-}
-.content {
-  background-color: black;
-  font-size: 25px;
 }
 .linktext {
   color: white;
