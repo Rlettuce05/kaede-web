@@ -7,7 +7,7 @@
         <div id="app">
           <b-row>
             <div v-for="(work, index) in works" :key="work.id">
-              <b-col cols="4">
+              <b-col cols="6">
                 <a v-bind:href="work.link" target="_blank">
                   <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
                     <b-img :src="require(`@/static/works/${work.img}`)" class="thumbnail"></b-img>
@@ -33,21 +33,23 @@ b-container {
   margin: 5%;
 }
 .thumbnail {
-  width: 30vw;
+  width: 33vw;
   height: auto;
 }
 .title {
-  visibility: hidden;
+/*  visibility: hidden; */
   z-index: 1;
 }
 @keyframes titleslidein {
   from {
+    visibility: hidden;
     opacity: 0%;
     position: absolute;
     top: -7px;
     font-size: 70%;
   }
   to {
+    visibility: visible;
     opacity: 100%;
     top: 1px;
     font-size: 100%;
