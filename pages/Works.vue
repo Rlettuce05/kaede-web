@@ -1,5 +1,6 @@
 <template>
-  <div class="background">
+  <div>
+    <div class="background"></div>
     <NavBar />
     <div class="content">
       <h1 class="PageTitle">Works</h1>
@@ -29,6 +30,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
 .content {
   font-family: 'Akshar', sans-serif;
+  color: white;
 }
 .PageTitle {
   text-align: center;
@@ -46,7 +48,6 @@ b-container {
 }
 .background {
   background-color: #333333;
-  color: white;
   position: fixed;
   width: 100vw;
   height: 100vh;
