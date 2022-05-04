@@ -30,7 +30,7 @@
 <style scoped>
 .iconcont {
   z-index: 1;
-  padding: 9vh 0vw;
+  padding: 9vh 0vw 5vh 0vw;
 }
 .content {
   text-align: center;
