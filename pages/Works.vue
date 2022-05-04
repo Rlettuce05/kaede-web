@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="background">
     <NavBar />
     <div class="content">
       <h1 class="PageTitle">Works</h1>
@@ -43,6 +43,14 @@ b-container {
 .title {
 /*  visibility: hidden; */
   z-index: 1;
+}
+.background {
+  background-color: #333333;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
 }
 @keyframes titleslidein {
   from {

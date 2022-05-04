@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="background">
     <NavBar />
     <div class="content">
       <h1 class="PageTitle">About</h1>
@@ -28,6 +28,14 @@
 .iconimg {
   width: 40vw;
   height: auto;
+}
+.background {
+  background-color: #333333;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
 }
 </style>
 

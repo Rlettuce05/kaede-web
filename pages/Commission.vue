@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="background">
     <NavBar />
     <div class="content">
       <h1 class="PageTitle">Commission</h1>
@@ -39,6 +39,14 @@
 }
 .PageTitle {
   text-align: center;
+}
+.background {
+  background-color: #333333;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
 }
 </style>
 
