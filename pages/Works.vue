@@ -15,7 +15,7 @@
                     <b-img :src="require(`@/static/works/${work.img}`)" class="thumbnail"></b-img>
                   </div>
                 </a>
-                <div class="title">
+                <div :class="{ 'visible': hover[index]}">
                   {{ work.title }}
                 </div>
               </b-col>
@@ -46,6 +46,9 @@ b-container {
 .title {
 /*  visibility: hidden; */
   z-index: 1;
+}
+.title.visible {
+
 }
 .background {
   background-color: #333333;
