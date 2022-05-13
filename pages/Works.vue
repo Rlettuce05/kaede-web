@@ -45,6 +45,7 @@ b-container {
 }
 .title {
 /*  visibility: hidden; */
+/*  opacity: 100; */
   z-index: 1;
 }
 .title.visible {
@@ -57,6 +58,7 @@ b-container {
   height: 100vh;
   z-index: 0;
 }
+/* × animation   〇 trainsition */
 @keyframes titleslidein {
   from {
     visibility: hidden;
