@@ -8,7 +8,7 @@
       <b-container>
         <div id="app">
           <b-row>
-            <div v-for="(work, index) in works" :key="work.id">
+            <div v-for="(work, index) in works" :key="work.id" class="my-3">
               <b-col cols="6">
                 <a v-bind:href="work.link" target="_blank">
                   <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
