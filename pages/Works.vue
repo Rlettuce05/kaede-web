@@ -73,18 +73,18 @@ export default {
   components: {
     NavBar
   },
-  asyncData() {
+  asyncData () {
     const works = require('~/static/works/workdata.json')
-    return{
+    return {
       works,
       hover: []
     }
   },
   methods: {
-    mouseover(index) {
+    mouseover (index) {
       this.$set(this.hover, index, true)
     },
-    mouseleave(index) {
+    mouseleave (index) {
       this.$set(this.hover, index, false)
     }
   }
