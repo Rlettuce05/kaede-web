@@ -18,9 +18,9 @@
                 <div :class="{'title': true, 'visible': hover[index]}">
                   {{ work.title }}
                 </div>
-              </div>
+              </b-col>
             </div>
-          </div>
+          </b-row>
         </div>
       </b-container>
     </div>
