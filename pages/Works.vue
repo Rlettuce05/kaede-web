@@ -15,7 +15,7 @@
                     <b-img :src="require(`@/static/works/${work.img}`)" class="thumbnail"></b-img>
                   </div>
                 </a>
-                <div :class="{ 'visible': hover[index]}">
+                <div :class="{'title': true, 'visible': hover[index]}">
                   {{ work.title }}
                 </div>
               </b-col>
@@ -44,12 +44,18 @@ b-container {
   height: auto;
 }
 .title {
-/*  visibility: hidden; */
-/*  opacity: 100; */
+  opacity: 0%;
+  position: absolute;
+  top: -7px;
+  font-size: 70%;
   z-index: 1;
+  transition: all 0.3s ease;
 }
 .title.visible {
-
+  visibility: visible;
+  opacity: 100%;
+  top: 1px;
+  font-size: 100%;
 }
 .background {
   background-color: #333333;
@@ -57,22 +63,6 @@ b-container {
   width: 100vw;
   height: 100vh;
   z-index: 0;
-}
-/* × animation   〇 trainsition */
-@keyframes titleslidein {
-  from {
-    visibility: hidden;
-    opacity: 0%;
-    position: absolute;
-    top: -7px;
-    font-size: 70%;
-  }
-  to {
-    visibility: visible;
-    opacity: 100%;
-    top: 1px;
-    font-size: 100%;
-  }
 }
 </style>
 
