@@ -7,9 +7,9 @@
       <h1 class="PageTitle">Works</h1>
       <b-container>
         <div id="app">
-          <div class="workrow">
+          <b-row>
             <div v-for="(work, index) in works" :key="work.id" class="my-3">
-              <div class="workcol">
+              <b-col cols="6">
                 <a v-bind:href="work.link" target="_blank">
                   <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
                     <b-img :src="require(`@/static/works/${work.img}`)" class="thumbnail"></b-img>
