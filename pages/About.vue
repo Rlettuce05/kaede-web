@@ -26,8 +26,7 @@
   text-align: center;
 }
 .iconimg {
-  width: 40vw;
-  height: auto;
+  width: 100%;
 }
 .background {
   background-color: #333333;
