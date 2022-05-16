@@ -8,14 +8,14 @@
       <b-container>
         <div id="app">
           <b-row>
-            <div v-for="(work, index) in works" :key="work.id">
+            <div v-for="(work, index) in works" :key="work.id" class="my-3">
               <b-col cols="6">
                 <a v-bind:href="work.link" target="_blank">
                   <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
                     <b-img :src="require(`@/static/works/${work.img}`)" class="thumbnail"></b-img>
                   </div>
                 </a>
-                <div :class="{ 'visible': hover[index]}">
+                <div :class="{'title': true, 'visible': hover[index]}">
                   {{ work.title }}
                 </div>
               </b-col>
@@ -44,12 +44,18 @@ b-container {
   height: auto;
 }
 .title {
-/*  visibility: hidden; */
-/*  opacity: 100; */
+  opacity: 0%;
+  position: absolute;
+  top: -7px;
+  font-size: 70%;
   z-index: 1;
+  transition: all 0.3s ease;
 }
 .title.visible {
-
+  visibility: visible;
+  opacity: 100%;
+  top: 1px;
+  font-size: 100%;
 }
 .background {
   background-color: #333333;
@@ -57,22 +63,6 @@ b-container {
   width: 100vw;
   height: 100vh;
   z-index: 0;
-}
-/* × animation   〇 trainsition */
-@keyframes titleslidein {
-  from {
-    visibility: hidden;
-    opacity: 0%;
-    position: absolute;
-    top: -7px;
-    font-size: 70%;
-  }
-  to {
-    visibility: visible;
-    opacity: 100%;
-    top: 1px;
-    font-size: 100%;
-  }
 }
 </style>
 
@@ -83,18 +73,18 @@ export default {
   components: {
     NavBar
   },
-  asyncData() {
+  asyncData () {
     const works = require('~/static/works/workdata.json')
-    return{
+    return {
       works,
       hover: []
     }
   },
   methods: {
-    mouseover(index) {
+    mouseover (index) {
       this.$set(this.hover, index, true)
     },
-    mouseleave(index) {
+    mouseleave (index) {
       this.$set(this.hover, index, false)
     }
   }
