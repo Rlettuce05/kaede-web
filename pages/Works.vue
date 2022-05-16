@@ -40,6 +40,10 @@ b-container {
 .thumbnail {
   width: 100%;
   height: auto;
+  transition: all 0.3s ease;
+}
+.thumbnail.attention {
+  
 }
 .title {
   opacity: 0%;
