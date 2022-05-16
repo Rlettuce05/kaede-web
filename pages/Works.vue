@@ -8,7 +8,7 @@
       <b-container>
         <div id="app">
           <b-row>
-            <b-col v-for="(work, index) in works" :key="work.id" cols="6" class="my-3">
+            <b-col v-for="(work, index) in works" :key="work.id" cols="4" class="my-3">
               <a v-bind:href="work.link" target="_blank">
                 <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
                   <b-img :src="require(`@/static/works/${work.img}`)" class="thumbnail"></b-img>
@@ -38,7 +38,7 @@ b-container {
   margin: 5%;
 }
 .thumbnail {
-  width: 300px;
+  width: 100%;
   height: auto;
 }
 .title {
