@@ -19,6 +19,7 @@
 <style scoped>
 .content {
   position: fixed;
+  width: 100vw;
   text-align: center;
   background-color: black;
   font-size: 25px;
