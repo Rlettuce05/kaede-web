@@ -1,9 +1,8 @@
 <template>
   <div>
+    <div class="background"></div>
+    <NavBar />
     <div class="content">
-      <div class="background">
-        <NavBar />
-      </div>
       <h1 class="PageTitle">Works</h1>
       <b-container>
         <div id="app">
@@ -33,6 +32,7 @@
 }
 .PageTitle {
   text-align: center;
+  padding-top: 50px;
 }
 b-container {
   margin: 5%;
@@ -64,7 +64,7 @@ b-container {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 0;
+  z-index: -1;
 }
 </style>
 
