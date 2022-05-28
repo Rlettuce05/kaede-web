@@ -1,5 +1,6 @@
 <template>
-  <div class="background">
+  <div>
+    <div class="background"></div>
     <NavBar />
     <div class="content">
       <h1 class="PageTitle">Commission</h1>
@@ -40,16 +41,18 @@ NavBar {
 .content {
   font-family: 'Akshar', sans-serif;
   width: 100vw;
+  color: rgba(255, 255, 255, 0.8);
 }
 .PageTitle {
   text-align: center;
+  padding-top: 50px;
 }
 .background {
   background-color: #333333;
-  color: rgba(255, 255, 255, 0.8);
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 0;
+  z-index: -1;
 }
 </style>
 
