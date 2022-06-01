@@ -31,13 +31,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
 .content {
   font-family: 'Akshar', sans-serif;
+  text-align: center;
 }
 .iconcont {
   z-index: 1;
   padding: 9vh 0vw 5vh 0vw;
-}
-.content {
-  text-align: center;
 }
 .pagelinks {
   width: 200px;
