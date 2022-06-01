@@ -24,6 +24,7 @@
 }
 .PageTitle {
   text-align: center;
+  padding-top: 50px;
 }
 .iconimg {
   width: 100%;
