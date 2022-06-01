@@ -46,7 +46,7 @@
   z-index: 0;
 }
 .links {
-  font-size: 15px;
+  font-size: 20px;
 }
 </style>
 
