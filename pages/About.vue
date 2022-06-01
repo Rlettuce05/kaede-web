@@ -12,6 +12,14 @@
             <b-img class="iconimg" src="../static/icon.jpeg"></b-img>
           </b-col>
         </b-row>
+        <b-row class="links-row mt-4">
+          <b-col class="links-col">
+            <b-btn class="links btn btn-outline-light" href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg"><b-icon icon="youtube"></b-icon></b-btn>
+          </b-col>
+          <b-col class="links-col">
+            <b-btn class="links btn btn-outline-light" href="https://twitter.com/ka3de_Rain"><b-icon icon="twitter"></b-icon></b-btn>
+          </b-col>
+        </b-row>
       </b-container>
     </div>
   </div>
@@ -21,9 +29,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
 .content {
   font-family: 'Akshar', sans-serif;
+  text-align: center;
 }
 .PageTitle {
-  text-align: center;
   padding-top: 50px;
 }
 .iconimg {
@@ -37,14 +45,21 @@
   height: 100vh;
   z-index: 0;
 }
+.links {
+  font-size: 15px;
+}
 </style>
 
 <script>
 import NavBar from '~/components/Navbar.vue'
+import { BIcon, BIconYoutube, BIconTwitter } from 'bootstrap-vue'
 export default {
   name: 'AboutPage',
   components: {
-    NavBar
+    NavBar,
+    BIcon,
+    BIconYoutube,
+    BIconTwitter
   }
 }
 </script>
