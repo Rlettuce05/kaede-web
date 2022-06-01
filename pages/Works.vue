@@ -7,7 +7,7 @@
       <b-container>
         <div id="app">
           <b-row>
-            <b-col v-for="(work, index) in works" :key="work.id" cols="4" class="my-3">
+            <b-col v-for="(work, index) in works" :key="work.id" col lg="4" md="4" sm="12" cols="12" class="my-3">
               <a v-bind:href="work.link" target="_blank">
                 <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
                   <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index]}"></b-img>
