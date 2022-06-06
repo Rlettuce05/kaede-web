@@ -24,6 +24,31 @@
   </div>
 </template>
 
+<script>
+import NavBar from '~/components/Navbar.vue'
+export default {
+  name: 'WorksPage',
+  components: {
+    NavBar
+  },
+  asyncData () {
+    const works = require('~/static/works/workdata.json')
+    return {
+      works,
+      hover: []
+    }
+  },
+  methods: {
+    mouseover (index) {
+      this.$set(this.hover, index, true)
+    },
+    mouseleave (index) {
+      this.$set(this.hover, index, false)
+    }
+  }
+}
+</script>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
 .content {
@@ -67,28 +92,3 @@ b-container {
   z-index: -1;
 }
 </style>
-
-<script>
-import NavBar from '~/components/Navbar.vue'
-export default {
-  name: 'WorksPage',
-  components: {
-    NavBar
-  },
-  asyncData () {
-    const works = require('~/static/works/workdata.json')
-    return {
-      works,
-      hover: []
-    }
-  },
-  methods: {
-    mouseover (index) {
-      this.$set(this.hover, index, true)
-    },
-    mouseleave (index) {
-      this.$set(this.hover, index, false)
-    }
-  }
-}
-</script>
