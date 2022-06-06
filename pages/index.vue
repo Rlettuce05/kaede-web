@@ -20,7 +20,7 @@
           <b-btn class="links btn btn-outline-light" href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg"><b-icon icon="youtube"></b-icon></b-btn>
         </b-col>
         <b-col class="links-col">
-          <b-btn class="links btn btn-outline-light" href="https://twitter.com/ka3de_KA"><b-icon icon="twitter"></b-icon></b-btn>
+          <b-btn class="links btn btn-outline-light" href="https://twitter.com/ka3de_Rain"><b-icon icon="twitter"></b-icon></b-btn>
         </b-col>
       </b-row>
     </b-container>
@@ -31,13 +31,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
 .content {
   font-family: 'Akshar', sans-serif;
+  text-align: center;
 }
 .iconcont {
   z-index: 1;
   padding: 9vh 0vw 5vh 0vw;
-}
-.content {
-  text-align: center;
 }
 .pagelinks {
   width: 200px;

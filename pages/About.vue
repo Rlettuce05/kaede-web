@@ -5,11 +5,19 @@
       <h1 class="PageTitle">About</h1>
       <b-container>
         <b-row>
-          <b-col lg="7" md="12" sm="12">
-            <p>3DCGやmotiongraphicsを用いてグラフィックを意識した映像を制作しています。</p>
+          <b-col lg="7" md="6" sm="12">
+            <p>3DCGやmotiongaphicsを用いてグラフィックを意識した映像を制作しています。</p>
           </b-col>
-          <b-col lg="5" md="12" sm="12">
+          <b-col lg="5" md="6" sm="12">
             <b-img class="iconimg" src="../static/icon.jpeg"></b-img>
+          </b-col>
+        </b-row>
+        <b-row class="links-row mt-4">
+          <b-col class="links-col">
+            <b-btn class="links btn btn-outline-light" href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg"><b-icon icon="youtube"></b-icon></b-btn>
+          </b-col>
+          <b-col class="links-col">
+            <b-btn class="links btn btn-outline-light" href="https://twitter.com/ka3de_Rain"><b-icon icon="twitter"></b-icon></b-btn>
           </b-col>
         </b-row>
       </b-container>
@@ -21,9 +29,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
 .content {
   font-family: 'Akshar', sans-serif;
+  text-align: center;
 }
 .PageTitle {
-  text-align: center;
+  padding-top: 50px;
 }
 .iconimg {
   width: 100%;
@@ -36,14 +45,21 @@
   height: 100vh;
   z-index: 0;
 }
+.links {
+  font-size: 20px;
+}
 </style>
 
 <script>
 import NavBar from '~/components/Navbar.vue'
+import { BIcon, BIconYoutube, BIconTwitter } from 'bootstrap-vue'
 export default {
   name: 'AboutPage',
   components: {
-    NavBar
+    NavBar,
+    BIcon,
+    BIconYoutube,
+    BIconTwitter
   }
 }
 </script>

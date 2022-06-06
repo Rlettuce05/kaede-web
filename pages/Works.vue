@@ -7,15 +7,15 @@
       <b-container>
         <div id="app">
           <b-row>
-            <b-col v-for="(work, index) in works" :key="work.id" cols="4" class="my-3">
+            <b-col v-for="(work, index) in works" :key="work.id" col lg="4" md="4" sm="12" cols="12" class="my-3">
               <a v-bind:href="work.link" target="_blank">
                 <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
                   <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index]}"></b-img>
+                  <div :class="{'title': true, 'visible': hover[index]}">
+                    {{ work.title }}
+                  </div>
                 </div>
               </a>
-              <div :class="{'title': true, 'visible': hover[index]}">
-                {{ work.title }}
-              </div>
             </b-col>
           </b-row>
         </div>
@@ -68,20 +68,22 @@ b-container {
   transition: all 0.3s ease;
 }
 .thumbnail.attention {
-  
+  filter: blur(6px);
 }
 .title {
   opacity: 0%;
   position: absolute;
-  top: -7px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  margin: auto;
   font-size: 70%;
   z-index: 1;
+  color: white;
   transition: all 0.3s ease;
 }
 .title.visible {
-  visibility: visible;
   opacity: 100%;
-  top: 1px;
   font-size: 100%;
 }
 .background {
