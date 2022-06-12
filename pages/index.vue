@@ -27,6 +27,18 @@
   </div>
 </template>
 
+<script>
+import { BIcon, BIconYoutube, BIconTwitter } from 'bootstrap-vue'
+export default {
+  name: 'IndexPage',
+  components: {
+    BIcon,
+    BIconYoutube,
+    BIconTwitter
+  }
+}
+</script>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
 .content {
@@ -52,15 +64,3 @@
   z-index: 0;
 }
 </style>
-
-<script>
-import { BIcon, BIconYoutube, BIconTwitter } from 'bootstrap-vue'
-export default {
-  name: 'IndexPage',
-  components: {
-    BIcon,
-    BIconYoutube,
-    BIconTwitter
-  }
-}
-</script>
