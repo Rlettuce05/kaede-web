@@ -25,6 +25,20 @@
   </div>
 </template>
 
+<script>
+import NavBar from '~/components/Navbar.vue'
+import { BIcon, BIconYoutube, BIconTwitter } from 'bootstrap-vue'
+export default {
+  name: 'AboutPage',
+  components: {
+    NavBar,
+    BIcon,
+    BIconYoutube,
+    BIconTwitter
+  }
+}
+</script>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
 .content {
@@ -49,17 +63,3 @@
   font-size: 20px;
 }
 </style>
-
-<script>
-import NavBar from '~/components/Navbar.vue'
-import { BIcon, BIconYoutube, BIconTwitter } from 'bootstrap-vue'
-export default {
-  name: 'AboutPage',
-  components: {
-    NavBar,
-    BIcon,
-    BIconYoutube,
-    BIconTwitter
-  }
-}
-</script>
