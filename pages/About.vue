@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import NavBar from '~/components/Navbar.vue'
 import { BIcon, BIconYoutube, BIconTwitter } from 'bootstrap-vue'
+import NavBar from '~/components/Navbar.vue'
 export default {
   name: 'AboutPage',
   components: {
