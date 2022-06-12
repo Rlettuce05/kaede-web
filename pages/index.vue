@@ -63,4 +63,12 @@ export default {
   height: 100vh;
   z-index: 0;
 }
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
 </style>
