@@ -44,6 +44,7 @@ export default {
 .content {
   font-family: 'Akshar', sans-serif;
   text-align: center;
+  transition: opacity 0.5s;
 }
 .PageTitle {
   padding-top: 50px;
@@ -62,12 +63,12 @@ export default {
 .links {
   font-size: 20px;
 }
-.page-enter-active,
-.page-leave-active {
+.page-enter-active .content,
+.page-leave-active .content {
   transition: opacity 0.5s;
 }
-.page-enter,
-.page-leave-active {
+.page-enter .content,
+.page-leave-active .content {
   opacity: 0;
 }
 </style>

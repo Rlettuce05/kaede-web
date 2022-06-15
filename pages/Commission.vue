@@ -52,6 +52,7 @@ NavBar {
   font-family: 'Akshar', sans-serif;
   width: 100vw;
   color: rgba(255, 255, 255, 0.8);
+  transition: opacity 0.5s;
 }
 .PageTitle {
   text-align: center;
@@ -64,12 +65,12 @@ NavBar {
   height: 100vh;
   z-index: -1;
 }
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
+.page-enter-active .content,
+.page-leave-active .content {
+  opacity: 1;
 }
-.page-enter,
-.page-leave-active {
+.page-enter .content,
+.page-leave-active .content {
   opacity: 0;
 }
 </style>

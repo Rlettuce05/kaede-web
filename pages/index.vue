@@ -44,6 +44,7 @@ export default {
 .content {
   font-family: 'Akshar', sans-serif;
   text-align: center;
+  transition: opacity 0.5s;
 }
 .iconcont {
   z-index: 1;
@@ -63,12 +64,12 @@ export default {
   height: 100vh;
   z-index: 0;
 }
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
+.page-enter-active .content,
+.page-leave-active .content {
+  opacity: 1;
 }
-.page-enter,
-.page-leave-active {
+.page-enter .content,
+.page-leave-active .content {
   opacity: 0;
 }
 </style>

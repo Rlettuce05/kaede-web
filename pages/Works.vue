@@ -54,6 +54,7 @@ export default {
 .content {
   font-family: 'Akshar', sans-serif;
   color: white;
+  transition: opacity 0.5s;
 }
 .PageTitle {
   text-align: center;
@@ -93,12 +94,12 @@ b-container {
   height: 100vh;
   z-index: -1;
 }
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
+.page-enter-active .content,
+.page-leave-active .content{
+  opacity: 1;
 }
-.page-enter,
-.page-leave-active {
+.page-enter .content,
+.page-leave-active .content{
   opacity: 0;
 }
 </style>
