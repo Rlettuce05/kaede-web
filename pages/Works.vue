@@ -2,25 +2,54 @@
   <div>
     <div class="background"></div>
     <NavBar />
-    <div class="content">
-      <h1 class="PageTitle">Works</h1>
-      <b-container>
-        <div id="app">
-          <b-row>
-            <b-col v-for="(work, index) in works" :key="work.id" col lg="4" md="4" sm="12" cols="12" class="my-3">
-              <a v-bind:href="work.link" target="_blank">
-                <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
-                  <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index]}"></b-img>
-                  <div :class="{'title': true, 'visible': hover[index]}">
-                    {{ work.title }}
+    <transition>
+      <div class="content">
+        <h1 class="PageTitle">Works</h1>
+        <b-container>
+          <div id="app">
+            <h2 class="tag">CG</h2>
+            <b-row>
+              <b-col v-for="(work, index) in cg" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
+                <a v-bind:href="work.link" target="_blank">
+                  <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
+                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index]}"></b-img>
+                    <div :class="{'title': true, 'visible': hover[index]}">
+                      {{ work.title }}
+                    </div>
                   </div>
-                </div>
-              </a>
-            </b-col>
-          </b-row>
-        </div>
-      </b-container>
-    </div>
+                </a>
+              </b-col>
+            </b-row>
+            <h2 class="tag">XFD</h2>
+            <b-row>
+              <b-col v-for="(work, index) in xfd" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
+                <a v-bind:href="work.link" target="_blank">
+                  <div @mouseover="mouseover(index+10)" @mouseleave="mouseleave(index+10)">
+                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+10]}"></b-img>
+                    <div :class="{'title': true, 'visible': hover[index+10]}">
+                      {{ work.title }}
+                    </div>
+                  </div>
+                </a>
+              </b-col>
+            </b-row>
+            <h2 class="tag">MV</h2>
+            <b-row>
+              <b-col v-for="(work, index) in mv" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
+                <a v-bind:href="work.link" target="_blank">
+                  <div @mouseover="mouseover(index+20)" @mouseleave="mouseleave(index+20)">
+                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+20]}"></b-img>
+                    <div :class="{'title': true, 'visible': hover[index+20]}">
+                      {{ work.title }}
+                    </div>
+                  </div>
+                </a>
+              </b-col>
+            </b-row>
+          </div>
+        </b-container>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -33,8 +62,23 @@ export default {
   },
   asyncData () {
     const works = require('~/static/works/workdata.json')
+    let cg = [], xfd = [], mv = [];
+    for (let i = 0; i < works.length; i++) {
+      let a = works[i].tag
+      if(a == "CG") {
+        cg.push(works[i])
+      }
+      else if(a == "XFD") {
+        xfd.push(works[i])
+      }
+      else if(a == "MV") {
+        mv.push(works[i])
+      }
+    }
     return {
-      works,
+      cg,
+      xfd,
+      mv,
       hover: []
     }
   },
