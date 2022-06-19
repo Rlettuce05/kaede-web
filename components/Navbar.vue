@@ -23,6 +23,7 @@
   text-align: center;
   background-color: black;
   font-size: 25px;
+  z-index: 1;
 }
 .linktext {
   text-align: center;
