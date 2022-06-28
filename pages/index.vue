@@ -2,7 +2,12 @@
   <div class="background">
     <b-container class="content">
       <div class="iconcont">
-        <b-img src="../static/icon.png"></b-img>
+        <b-row>
+          <b-col lg="3" md="3" sm="0"></b-col>
+          <b-col lg="6" md="6" sm="12">
+            <b-img class="iconimg" src="../static/icon.png"></b-img>
+          </b-col>
+        </b-row>
       </div>
       <b-row class="pagelinks-row">
         <b-col class="pagelinks-col">
@@ -49,6 +54,9 @@ export default {
 .iconcont {
   z-index: 1;
   padding: 7vh 0vw 5vh 0vw;
+}
+b-img {
+  width: 100%;
 }
 .pagelinks {
   width: 200px;
