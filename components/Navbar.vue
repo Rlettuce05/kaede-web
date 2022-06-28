@@ -26,10 +26,8 @@
   z-index: 1;
 }
 .linktext {
-  text-align: center;
-}
-.linktext {
   color: white;
+  text-align: center;
 }
 </style>
 
