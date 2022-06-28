@@ -55,7 +55,7 @@ export default {
   z-index: 1;
   padding: 7vh 0vw 5vh 0vw;
 }
-b-img {
+.iconimg {
   width: 100%;
 }
 .pagelinks {
