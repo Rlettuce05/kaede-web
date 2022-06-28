@@ -48,7 +48,7 @@ export default {
 }
 .iconcont {
   z-index: 1;
-  padding: 9vh 0vw 5vh 0vw;
+  padding: 7vh 0vw 5vh 0vw;
 }
 .pagelinks {
   width: 200px;
