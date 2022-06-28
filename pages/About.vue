@@ -59,6 +59,10 @@ export default {
 .letter-body {
   text-align: center;
 }
+.textimg {
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
 .background {
   background-color: #333333;
   color: white;
