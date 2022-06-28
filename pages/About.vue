@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="background">
+    <div class="background"></div>
     <NavBar />
     <div class="content">
       <h1 class="PageTitle">About</h1>
