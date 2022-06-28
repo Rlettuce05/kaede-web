@@ -62,16 +62,16 @@ export default {
   },
   asyncData () {
     const works = require('~/static/works/workdata.json')
-    let cg = [], xfd = [], mv = [];
+    const cg = []
+    const xfd = []
+    const mv = []
     for (let i = 0; i < works.length; i++) {
-      let a = works[i].tag
-      if(a == "CG") {
+      const a = works[i].tag
+      if (a === 'CG') {
         cg.push(works[i])
-      }
-      else if(a == "XFD") {
+      } else if (a === 'XFD') {
         xfd.push(works[i])
-      }
-      else if(a == "MV") {
+      } else if (a === 'MV') {
         mv.push(works[i])
       }
     }
