@@ -9,7 +9,7 @@
             <p>3DCGやmotiongaphicsを用いてグラフィックを意識した映像を制作しています。</p>
           </b-col>
           <b-col lg="5" md="6" sm="12">
-            <b-img class="iconimg" src="../static/icon.jpeg"></b-img>
+            <b-img class="iconimg" src="../static/icon.png"></b-img>
           </b-col>
         </b-row>
         <b-row class="links-row mt-4">

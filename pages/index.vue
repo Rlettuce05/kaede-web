@@ -2,7 +2,7 @@
   <div class="background">
     <b-container class="content">
       <div class="iconcont">
-        <b-img src="../static/icon.jpeg"></b-img>
+        <b-img src="../static/icon.png"></b-img>
       </div>
       <b-row class="pagelinks-row">
         <b-col class="pagelinks-col">
