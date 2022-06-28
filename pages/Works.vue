@@ -131,6 +131,10 @@ b-container {
   opacity: 100%;
   font-size: 100%;
 }
+.tag {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
 .background {
   background-color: #333333;
   position: fixed;
