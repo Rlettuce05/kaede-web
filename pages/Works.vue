@@ -7,7 +7,7 @@
         <h1 class="PageTitle">Works</h1>
         <b-container>
           <div id="app">
-            <h2 class="tag">CG</h2>
+            <h2 class="tag">3DCG</h2>
             <b-row>
               <b-col v-for="(work, index) in cg" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
                 <a v-bind:href="work.link" target="_blank">
