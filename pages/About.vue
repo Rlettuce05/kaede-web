@@ -48,6 +48,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
 .content {
   font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: white;
   text-align: center;
   transition: opacity 0.5s;
 }
@@ -66,7 +67,6 @@ export default {
 }
 .background {
   background-color: #333333;
-  color: white;
   position: fixed;
   width: 100vw;
   height: 100vh;
