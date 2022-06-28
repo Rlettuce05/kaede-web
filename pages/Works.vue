@@ -7,6 +7,19 @@
         <h1 class="PageTitle">Works</h1>
         <b-container>
           <div id="app">
+            <h2 class="tag">MV</h2>
+            <b-row>
+              <b-col v-for="(work, index) in mv" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
+                <a v-bind:href="work.link" target="_blank">
+                  <div @mouseover="mouseover(index+20)" @mouseleave="mouseleave(index+20)">
+                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+20]}"></b-img>
+                    <div :class="{'title': true, 'visible': hover[index+20]}">
+                      {{ work.title }}
+                    </div>
+                  </div>
+                </a>
+              </b-col>
+            </b-row>
             <h2 class="tag">3DCG</h2>
             <b-row>
               <b-col v-for="(work, index) in cg" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
@@ -27,19 +40,6 @@
                   <div @mouseover="mouseover(index+10)" @mouseleave="mouseleave(index+10)">
                     <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+10]}"></b-img>
                     <div :class="{'title': true, 'visible': hover[index+10]}">
-                      {{ work.title }}
-                    </div>
-                  </div>
-                </a>
-              </b-col>
-            </b-row>
-            <h2 class="tag">MV</h2>
-            <b-row>
-              <b-col v-for="(work, index) in mv" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
-                <a v-bind:href="work.link" target="_blank">
-                  <div @mouseover="mouseover(index+20)" @mouseleave="mouseleave(index+20)">
-                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+20]}"></b-img>
-                    <div :class="{'title': true, 'visible': hover[index+20]}">
                       {{ work.title }}
                     </div>
                   </div>
