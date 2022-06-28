@@ -5,11 +5,15 @@
       <h1 class="PageTitle">About</h1>
       <b-container>
         <b-row>
-          <b-col lg="7" md="6" sm="12">
-            <p>3DCGやmotiongaphicsを用いてグラフィックを意識した映像を制作しています。</p>
-          </b-col>
-          <b-col lg="5" md="6" sm="12">
+          <b-col lg="3" md="3" sm="0"></b-col>
+          <b-col class="letter-body" lg="6" md="6" sm="12">
             <b-img class="iconimg" src="../static/icon.png"></b-img>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col lg="3" md="3" sm="0"></b-col>
+          <b-col class="letter-body" lg="6" md="6" sm="12">
+            <p class="letter-body textimg">3DCGやmotiongaphicsを用いてグラフィックを意識した映像を制作しています。</p>
           </b-col>
         </b-row>
         <b-row class="links-row mt-4">
@@ -51,6 +55,9 @@ export default {
 }
 .iconimg {
   width: 100%;
+}
+.letter-body {
+  text-align: center;
 }
 .background {
   background-color: #333333;
