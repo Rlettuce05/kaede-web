@@ -44,12 +44,12 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
 NavBar {
   width: 100vw;
 }
 .content {
-  font-family: 'Akshar', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   width: 100vw;
   color: rgba(255, 255, 255, 0.8);
   transition: opacity 0.5s;

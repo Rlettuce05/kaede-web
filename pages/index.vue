@@ -40,9 +40,9 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
 .content {
-  font-family: 'Akshar', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   text-align: center;
   transition: opacity 0.5s;
 }
