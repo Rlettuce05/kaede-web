@@ -1,5 +1,6 @@
 <template>
-  <div class="background">
+  <div>
+    <div class="background">
     <NavBar />
     <div class="content">
       <h1 class="PageTitle">About</h1>
