@@ -50,6 +50,7 @@ NavBar {
 }
 .content {
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 500;
   width: 100vw;
   color: rgba(255, 255, 255, 0.8);
   transition: opacity 0.5s;
