@@ -1,5 +1,5 @@
 <template>
-  <div class='content'>
+  <div div :class="{'content': true, 'smartphone': smartphone}">
     <b-container>
       <b-row>
         <b-col cols="4">
@@ -25,6 +25,10 @@
   font-size: 25px;
   z-index: 1;
 }
+.smartphone {
+  font-size: 18px;
+  text-decoration: underline;
+}
 .linktext {
   color: white;
   text-align: center;
@@ -33,6 +37,23 @@
 
 <script>
 export default {
-  name: 'NavBar'
+  name: 'NavBar',
+  data() {
+    return{
+      smartphone: false
+    }
+  },
+  mounted() {
+    if(window.innerWidth <= 760) {
+      this.smartphone = true
+    }
+    this.$nextTick(() => {
+      window.addEventListener('resize', () => {
+        if(window.innerWidth <= 760) {
+          this.smartphone = true
+        }
+      })
+    })
+  },
 }
 </script>
