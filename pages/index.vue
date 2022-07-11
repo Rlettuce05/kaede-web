@@ -1,31 +1,47 @@
 <template>
   <div class="background">
-    <b-container class="content">
-      <div class="iconcont">
-        <b-row>
-          <b-col lg="3" md="3" sm="0"></b-col>
-          <b-col lg="6" md="6" sm="12">
-            <b-img class="iconimg" src="../static/icon.png"></b-img>
-          </b-col>
-        </b-row>
+    <b-container class="text-center">
+      <div class="icon-img ">
+        <nuxt-picture :imgAttrs="{class: 'w-100'}" src="/icon.png"></nuxt-picture>
       </div>
-      <b-row class="pagelinks-row">
-        <b-col class="pagelinks-col">
-          <b-btn squared class="pagelinks btn btn-outline-light" href="Works">WORKS</b-btn>
+      <b-row class="mt-5 mb-4">
+        <b-col>
+          <b-btn squared class="btn btn-outline-light px-5" href="Works"
+            >WORKS</b-btn
+          >
         </b-col>
-        <b-col class="pagelinks-col">
-          <b-btn squared class="pagelinks btn btn-outline-light" href="About">ABOUT</b-btn>
+        <b-col>
+          <b-btn squared class="btn btn-outline-light px-5" href="About"
+            >ABOUT</b-btn
+          >
         </b-col>
-        <b-col class="pagelinks-col">
-          <b-btn squared class="pagelinks btn btn-outline-light" href="Commission">COMMISSION</b-btn>
+        <b-col>
+          <b-btn
+            squared
+            class="btn btn-outline-light px-5"
+            href="Commission"
+            >COMMISSION</b-btn
+          >
         </b-col>
       </b-row>
-      <b-row class="links-row mt-4">
-        <b-col class="links-col">
-          <b-btn class="links btn btn-outline-light" href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg" target="_blank"><b-icon icon="youtube"></b-icon></b-btn>
+      <b-row class="mt-4">
+        <b-col>
+          <b-btn
+            class="btn btn-outline-light"
+            href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg"
+            target="_blank"
+            style="font-size: 2em"
+            ><b-icon icon="youtube"></b-icon
+          ></b-btn>
         </b-col>
-        <b-col class="links-col">
-          <b-btn class="links btn btn-outline-light" href="https://twitter.com/ka3de_Rain" target="_blank"><b-icon icon="twitter"></b-icon></b-btn>
+        <b-col>
+          <b-btn
+            class="btn btn-outline-light"
+            href="https://twitter.com/ka3de_Rain"
+            target="_blank"
+            style="font-size: 2em"
+            ><b-icon icon="twitter" style="margin-bottom: 2px"></b-icon
+          ></b-btn>
         </b-col>
       </b-row>
     </b-container>
@@ -33,52 +49,31 @@
 </template>
 
 <script>
-import { BIcon, BIconYoutube, BIconTwitter } from 'bootstrap-vue'
+import { BIcon, BIconYoutube, BIconTwitter } from "bootstrap-vue";
+
 export default {
-  name: 'IndexPage',
   components: {
     BIcon,
     BIconYoutube,
-    BIconTwitter
-  }
-}
+    BIconTwitter,
+  },
+};
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
-.content {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-weight: 500;
-  text-align: center;
-  transition: opacity 0.5s;
-}
-.iconcont {
-  z-index: 1;
-  padding: 7vh 0vw 5vh 0vw;
-}
-.iconimg {
-  width: 100%;
-}
-.pagelinks {
-  width: 200px;
-  padding: 3px;
-}
-.links {
-  font-size: 30px;
-}
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
+
 .background {
-  background-color: #333333;
-  position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.page-enter-active .content,
-.page-leave-active .content {
-  opacity: 1;
-}
-.page-enter .content,
-.page-leave-active .content {
-  opacity: 0;
+
+.icon-img {
+  max-width: 400px;
+  padding: 0 2em;
+  margin: 0 auto;
 }
 </style>

@@ -50,6 +50,7 @@
         </b-container>
       </div>
     </transition>
+    <Footer class="mt-5" />
   </div>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="background"></div>
     <NavBar />
     <div class="content">
       <h1 class="PageTitle">About</h1>
@@ -8,7 +7,7 @@
         <b-row>
           <b-col lg="3" md="3" sm="0"></b-col>
           <b-col class="letter-body" lg="6" md="6" sm="12">
-            <b-img class="iconimg" src="../static/icon.png"></b-img>
+            <nuxt-picture :imgAttrs="{class: 'w-100'}" src="/icon.png"></nuxt-picture>
           </b-col>
         </b-row>
         <b-row>
@@ -27,6 +26,7 @@
         </b-row>
       </b-container>
     </div>
+    <Footer class="mt-5" />
   </div>
 </template>
 
@@ -56,9 +56,7 @@ export default {
 .PageTitle {
   padding-top: 50px;
 }
-.iconimg {
-  width: 100%;
-}
+
 .letter-body {
   text-align: center;
 }
@@ -66,13 +64,7 @@ export default {
   margin-top: 15px;
   font-size: 1.3rem;
 }
-.background {
-  background-color: #333333;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-}
+
 .links {
   font-size: 20px;
 }

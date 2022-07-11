@@ -30,6 +30,7 @@
         </div>
       </b-container>
     </div>
+    <Footer class="mt-5" />
   </div>
 </template>
 
