@@ -7,6 +7,19 @@
         <h1 class="PageTitle">Works</h1>
         <b-container>
           <div id="app">
+            <h2 class="tag">REEL</h2>
+            <b-row>
+              <b-col v-for="(work, index) in reel" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
+                <a v-bind:href="work.link" target="_blank">
+                  <div @mouseover="mouseover(index+30)" @mouseleave="mouseleave(index+30)">
+                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+30]}"></b-img>
+                    <div :class="{'title': true, 'visible': hover[index+30]}">
+                      {{ work.title }}
+                    </div>
+                  </div>
+                </a>
+              </b-col>
+            </b-row>
             <h2 class="tag">MV</h2>
             <b-row>
               <b-col v-for="(work, index) in mv" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
@@ -63,12 +76,15 @@ export default {
   },
   asyncData () {
     const works = require('~/static/works/workdata.json')
+    const reel = []
     const cg = []
     const xfd = []
     const mv = []
     for (let i = 0; i < works.length; i++) {
       const a = works[i].tag
-      if (a === 'CG') {
+      if (a === 'REEL') {
+        reel.push(works[i])
+      } else if (a === 'CG') {
         cg.push(works[i])
       } else if (a === 'XFD') {
         xfd.push(works[i])
@@ -77,6 +93,7 @@ export default {
       }
     }
     return {
+      reel,
       cg,
       xfd,
       mv,
