@@ -131,7 +131,7 @@ b-container {
 }
 .title.visible {
   opacity: 100%;
-  font-size: 100%;
+  font-size: 1.5rem;
 }
 .tag {
   margin-top: 8px;
