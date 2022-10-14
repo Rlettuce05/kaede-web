@@ -25,9 +25,9 @@ Visit https://ka3de.work
 ### Chipsnet (Minato minami)
 
 Optimize design, maintenance, repository owner.   
-@Chipsnet
+[@Chipsnet](https://github.com/Chipsnet)
 
 ### Rlettuce05 (Rlettuce)
 
 Main design, repository maintainer.     
-@Rlettuce05
+[@Rlettuce05](https://github.com/Rlettuce05)
