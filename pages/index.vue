@@ -2,7 +2,7 @@
   <div class="background">
     <b-container class="text-center">
       <div class="icon-img ">
-        <nuxt-picture :imgAttrs="{class: 'w-100'}" src="/icon.png"></nuxt-picture>
+        <nuxt-picture :imgAttrs="{class: 'w-100'}" src="/icon.png" />
       </div>
       <b-row class="mt-5 mb-4">
         <b-col>
