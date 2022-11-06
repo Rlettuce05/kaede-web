@@ -38,7 +38,14 @@
 		"id": "CommonWorldDomination",
 		"title": "ありふれたせかいせいふく",
 		"tag": "MV",
-		"link": "https://youtu.be/qpapXGEgxcE",
-		"img": "commonworlddomination.png"
+		"link": "https://www.youtube.com/watch?v=nIHx-BCZdtE",
+		"img": "likeahumanbeing.png"
+	},
+	{
+		"id": "showreel",
+		"title": "紙雨楓showreel",
+		"tag": "REEL",
+		"link": "https://www.youtube.com/watch?v=MBftCfroEjI",
+		"img": "showreel.png"
 	}
 ]
