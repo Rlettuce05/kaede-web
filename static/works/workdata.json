@@ -1,10 +1,10 @@
 [
 	{
-		"id": "GhostDinnerParty",
-		"title": "Ghost dinner party",
+		"id": "TerminalExistenceHypothesis",
+		"title": "終末的存在仮説",
 		"tag": "CG",
-		"link": "https://www.youtube.com/watch?v=cSyJ0KwJqrs",
-		"img": "ghostdinnerparty.png"
+		"link": "https://www.youtube.com/watch?v=vzvc_UhZx1w",
+		"img": "terminalexistencehypothesis.png"
 	},
 	{
 		"id": "MalikBash",
@@ -35,10 +35,10 @@
 		"img": "ivory.png"
 	},
 	{
-		"id": "LikeAHumanBeing",
-		"title": "人間らしい",
+		"id": "CommonWorldDomination",
+		"title": "ありふれたせかいせいふく",
 		"tag": "MV",
-		"link": "https://www.youtube.com/watch?v=nIHx-BCZdtE",
-		"img": "likeahumanbeing.png"
+		"link": "https://youtu.be/qpapXGEgxcE",
+		"img": "commonworlddomination.png"
 	}
 ]
