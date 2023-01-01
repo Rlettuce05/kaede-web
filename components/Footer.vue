@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <p>©2022 紙雨楓</p>
+    <p>©2023 紙雨楓</p>
     <p>Design by RLettuce</p>
   </div>
 </template>
