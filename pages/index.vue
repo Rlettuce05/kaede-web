@@ -20,10 +20,12 @@
                         <h1>紙雨 楓</h1>
                         <p>Kaede Kamisame</p>
                         <p>
-                            3DCGやmotiongaphicsを用いてグラフィックを意識した映像を制作しています。
+                            BlenderやAfterEffectsなどを駆使し、3DCG作品やMotionGraphics作品を制作しています。
                         </p>
-                        <a href="" class="btn btn-primary">Twitter</a>
-                        <a href="" class="btn btn-danger ml-2">YouTube</a>
+                        <div class="flex-button">
+                            <a href="https://twitter.com/ka3de_Rain" target="_blank" class="btn btn-primary text-decoration-none">Twitter</a>
+                            <a href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg" target="_blank" class="btn btn-danger text-decoration-none">YouTube</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,5 +53,11 @@ export default {
     justify-content: center;
     align-items: center;
     gap: 2em;
+}
+
+.flex-button {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
 }
 </style>

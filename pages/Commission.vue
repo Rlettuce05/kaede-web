@@ -10,6 +10,7 @@
                             映像製作をしています。<br />依頼の際はぜひTwitterのダイレクトメッセージからお気軽に声をおかけください。
                         </p>
                     </div>
+                    <a href="https://twitter.com/ka3de_Rain" target="_blank" class="btn btn-primary text-decoration-none">Twitter</a>
                 </div>
                 <div class="mb-5">
                     <h2>依頼の流れ</h2>

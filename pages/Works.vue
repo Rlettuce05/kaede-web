@@ -6,14 +6,10 @@
                 <b-tab title="All" :title-link-class="linkClass(0)">
                     <b-container>
                         <b-row class="mt-3" cols="3">
-                        <b-col v-for="(work, index) in works" :key="work.id" class="p-0">
-                            <a v-bind:href="work.link" target="_blank">
-                                <div @mouseover="mouseover(index+30)" @mouseleave="mouseleave(index+30)">
-                                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+30]}"></b-img>
-                                    <div :class="{'title': true, 'visible': hover[index+30]}">
-                                        {{ work.title }}
-                                    </div>
-                                </div>
+                        <b-col v-for="(work) in works" :key="work.id" class="p-0">
+                            <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
+                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <p class="fs-5 mt-2">{{ work.title }}</p>
                             </a>
                         </b-col>
                     </b-row>
@@ -22,14 +18,10 @@
                 <b-tab title="MV" :title-link-class="linkClass(1)">
                     <b-container>
                         <b-row class="mt-3" cols="3">
-                        <b-col v-for="(work, index) in mv" :key="work.id" class="p-0">
-                            <a v-bind:href="work.link" target="_blank">
-                                <div @mouseover="mouseover(index+30)" @mouseleave="mouseleave(index+30)">
-                                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+30]}"></b-img>
-                                    <div :class="{'title': true, 'visible': hover[index+30]}">
-                                        {{ work.title }}
-                                    </div>
-                                </div>
+                        <b-col v-for="(work) in mv" :key="work.id" class="p-0">
+                            <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
+                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <p class="fs-5 mt-2">{{ work.title }}</p>
                             </a>
                         </b-col>
                     </b-row>
@@ -38,14 +30,10 @@
                 <b-tab title="3DCG" :title-link-class="linkClass(2)">
                     <b-container>
                         <b-row class="mt-3" cols="3">
-                        <b-col v-for="(work, index) in cg" :key="work.id" class="p-0">
-                            <a v-bind:href="work.link" target="_blank">
-                                <div @mouseover="mouseover(index+30)" @mouseleave="mouseleave(index+30)">
-                                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+30]}"></b-img>
-                                    <div :class="{'title': true, 'visible': hover[index+30]}">
-                                        {{ work.title }}
-                                    </div>
-                                </div>
+                        <b-col v-for="(work) in cg" :key="work.id" class="p-0">
+                            <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
+                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <p class="fs-5 mt-2">{{ work.title }}</p>
                             </a>
                         </b-col>
                     </b-row>
@@ -54,14 +42,10 @@
                 <b-tab title="XFD" :title-link-class="linkClass(3)">
                     <b-container>
                         <b-row class="mt-3" cols="3">
-                        <b-col v-for="(work, index) in xfd" :key="work.id" class="p-0">
-                            <a v-bind:href="work.link" target="_blank">
-                                <div @mouseover="mouseover(index+30)" @mouseleave="mouseleave(index+30)">
-                                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+30]}"></b-img>
-                                    <div :class="{'title': true, 'visible': hover[index+30]}">
-                                        {{ work.title }}
-                                    </div>
-                                </div>
+                        <b-col v-for="(work) in xfd" :key="work.id" class="p-0">
+                            <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
+                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <p class="fs-5 mt-2">{{ work.title }}</p>
                             </a>
                         </b-col>
                     </b-row>
@@ -159,6 +143,10 @@ b-container {
     z-index: 1;
     color: white;
     transition: all 0.3s ease;
+}
+.tag {
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 .title.visible {
     opacity: 100%;
