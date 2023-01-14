@@ -5,7 +5,7 @@
             <b-tabs v-model="tabIndex">
                 <b-tab title="All" :title-link-class="linkClass(0)">
                     <b-container>
-                        <b-row class="mt-3" cols="3">
+                        <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
                         <b-col v-for="(work) in works" :key="work.id" class="p-0">
                             <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
                                 <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
@@ -17,7 +17,7 @@
                 </b-tab>
                 <b-tab title="MV" :title-link-class="linkClass(1)">
                     <b-container>
-                        <b-row class="mt-3" cols="3">
+                        <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
                         <b-col v-for="(work) in mv" :key="work.id" class="p-0">
                             <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
                                 <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
@@ -29,7 +29,7 @@
                 </b-tab>
                 <b-tab title="3DCG" :title-link-class="linkClass(2)">
                     <b-container>
-                        <b-row class="mt-3" cols="3">
+                        <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
                         <b-col v-for="(work) in cg" :key="work.id" class="p-0">
                             <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
                                 <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
@@ -41,7 +41,7 @@
                 </b-tab>
                 <b-tab title="XFD" :title-link-class="linkClass(3)">
                     <b-container>
-                        <b-row class="mt-3" cols="3">
+                        <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
                         <b-col v-for="(work) in xfd" :key="work.id" class="p-0">
                             <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
                                 <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>

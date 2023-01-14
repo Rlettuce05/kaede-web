@@ -2,7 +2,7 @@
     <b-container>
         <div class="text-center text-white py-5">
             <h1>Kaede Kamisame</h1>
-            <p>3DCG / Motiongraphics Creator kamisame's portfolio</p>
+            <p class="fs-5-lg">3DCG / Motiongraphics Creator kamisame's portfolio</p>
             <Navbar class="mt-4" />
         </div>
         <Nuxt />
@@ -17,6 +17,7 @@ export default {};
 <style>
 body {
     background-color: #333333;
+    font-family: "Koruri", sans-serif;
 }
 
 #footer {

@@ -55,6 +55,12 @@ export default {
     gap: 2em;
 }
 
+@media (max-width: 576px) {
+    .flex-profile {
+        flex-direction: column;
+    }
+ }
+
 .flex-button {
     display: flex;
     align-items: center;
