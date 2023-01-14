@@ -3,7 +3,7 @@
         <div class="background"></div>
         <transition>
             <div class="content">
-                <div class="embed-responsive embed-responsive-16by9">
+                <div class="ratio ratio-16x9">
                     <iframe
                         class="embed-responsive-item"
                         src="https://www.youtube-nocookie.com/embed/MBftCfroEjI?rel=0&player.setVolume(5)"
