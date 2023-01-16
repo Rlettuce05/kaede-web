@@ -1,172 +1,178 @@
 <template>
-  <div>
-    <div class="background"></div>
-    <NavBar />
-    <transition>
-      <div class="content">
-        <h1 class="PageTitle">Works</h1>
-        <b-container>
-          <div id="app">
-            <h2 class="tag">REEL</h2>
-            <b-row>
-              <b-col v-for="(work, index) in reel" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
-                <a v-bind:href="work.link" target="_blank">
-                  <div @mouseover="mouseover(index+30)" @mouseleave="mouseleave(index+30)">
-                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+30]}"></b-img>
-                    <div :class="{'title': true, 'visible': hover[index+30]}">
-                      {{ work.title }}
-                    </div>
-                  </div>
-                </a>
-              </b-col>
-            </b-row>
-            <h2 class="tag">MV</h2>
-            <b-row>
-              <b-col v-for="(work, index) in mv" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
-                <a v-bind:href="work.link" target="_blank">
-                  <div @mouseover="mouseover(index+20)" @mouseleave="mouseleave(index+20)">
-                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+20]}"></b-img>
-                    <div :class="{'title': true, 'visible': hover[index+20]}">
-                      {{ work.title }}
-                    </div>
-                  </div>
-                </a>
-              </b-col>
-            </b-row>
-            <h2 class="tag">3DCG</h2>
-            <b-row>
-              <b-col v-for="(work, index) in cg" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
-                <a v-bind:href="work.link" target="_blank">
-                  <div @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
-                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index]}"></b-img>
-                    <div :class="{'title': true, 'visible': hover[index]}">
-                      {{ work.title }}
-                    </div>
-                  </div>
-                </a>
-              </b-col>
-            </b-row>
-            <h2 class="tag">XFD</h2>
-            <b-row>
-              <b-col v-for="(work, index) in xfd" :key="work.id" col lg="6" md="6" sm="12" cols="12" class="my-3">
-                <a v-bind:href="work.link" target="_blank">
-                  <div @mouseover="mouseover(index+10)" @mouseleave="mouseleave(index+10)">
-                    <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true, 'attention': hover[index+10]}"></b-img>
-                    <div :class="{'title': true, 'visible': hover[index+10]}">
-                      {{ work.title }}
-                    </div>
-                  </div>
-                </a>
-              </b-col>
-            </b-row>
-          </div>
-        </b-container>
-      </div>
-    </transition>
-    <Footer class="mt-5" />
-  </div>
+    <div>
+        <div class="background"></div>
+        <transition>
+            <b-tabs v-model="tabIndex">
+                <b-tab title="All" :title-link-class="linkClass(0)">
+                    <b-container>
+                        <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
+                        <b-col v-for="(work) in works" :key="work.id" class="p-0">
+                            <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
+                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <p class="fs-5 mt-2">{{ work.title }}</p>
+                            </a>
+                        </b-col>
+                    </b-row>
+                    </b-container>
+                </b-tab>
+                <b-tab title="MV" :title-link-class="linkClass(1)">
+                    <b-container>
+                        <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
+                        <b-col v-for="(work) in mv" :key="work.id" class="p-0">
+                            <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
+                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <p class="fs-5 mt-2">{{ work.title }}</p>
+                            </a>
+                        </b-col>
+                    </b-row>
+                    </b-container>
+                </b-tab>
+                <b-tab title="3DCG" :title-link-class="linkClass(2)">
+                    <b-container>
+                        <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
+                        <b-col v-for="(work) in cg" :key="work.id" class="p-0">
+                            <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
+                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <p class="fs-5 mt-2">{{ work.title }}</p>
+                            </a>
+                        </b-col>
+                    </b-row>
+                    </b-container>
+                </b-tab>
+                <b-tab title="XFD" :title-link-class="linkClass(3)">
+                    <b-container>
+                        <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
+                        <b-col v-for="(work) in xfd" :key="work.id" class="p-0">
+                            <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
+                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <p class="fs-5 mt-2">{{ work.title }}</p>
+                            </a>
+                        </b-col>
+                    </b-row>
+                    </b-container>
+                </b-tab>
+            </b-tabs>
+        </transition>
+    </div>
 </template>
 
 <script>
-import NavBar from '~/components/Navbar.vue'
+import NavBar from "~/components/Navbar.vue";
 export default {
-  name: 'WorksPage',
-  components: {
-    NavBar
-  },
-  asyncData () {
-    const works = require('~/static/works/workdata.json')
-    const reel = []
-    const cg = []
-    const xfd = []
-    const mv = []
-    for (let i = 0; i < works.length; i++) {
-      const a = works[i].tag
-      if (a === 'REEL') {
-        reel.push(works[i])
-      } else if (a === 'CG') {
-        cg.push(works[i])
-      } else if (a === 'XFD') {
-        xfd.push(works[i])
-      } else if (a === 'MV') {
-        mv.push(works[i])
-      }
-    }
-    return {
-      reel,
-      cg,
-      xfd,
-      mv,
-      hover: []
-    }
-  },
-  methods: {
-    mouseover (index) {
-      this.$set(this.hover, index, true)
+    name: "WorksPage",
+    components: {
+        NavBar,
     },
-    mouseleave (index) {
-      this.$set(this.hover, index, false)
+    asyncData() {
+        const works = require("~/static/works/workdata.json");
+        const reel = [];
+        const cg = [];
+        const xfd = [];
+        const mv = [];
+        for (let i = 0; i < works.length; i++) {
+            const a = works[i].tag;
+            if (a === "REEL") {
+                reel.push(works[i]);
+            } else if (a === "CG") {
+                cg.push(works[i]);
+            } else if (a === "XFD") {
+                xfd.push(works[i]);
+            } else if (a === "MV") {
+                mv.push(works[i]);
+            }
+        }
+        return {
+            reel,
+            cg,
+            xfd,
+            mv,
+            works,
+            hover: [],
+            tabIndex: 0
+        };
+    },
+    methods: {
+        mouseover(index) {
+            this.$set(this.hover, index, true);
+        },
+        mouseleave(index) {
+            this.$set(this.hover, index, false);
+        },
+        linkClass(idx) {
+            if (this.tabIndex === idx) {
+                return ["text-body"];
+            } else {
+                return ["text-light"];
+            }
+        },
+    },
+    head() {
+        return {
+            title: 'Works',
+            meta: [
+                {
+                    hid: 'og:title',
+                    property: 'og:title',
+                    content: 'Works｜Kaede Kamisame',
+                },
+            ],
+        }
     }
-  }
-}
+};
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
 .content {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-weight: 500;
-  color: white;
-  transition: opacity 0.5s;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    color: white;
+    transition: opacity 0.5s;
 }
 .PageTitle {
-  text-align: center;
-  padding-top: 50px;
+    text-align: center;
+    padding-top: 50px;
 }
 b-container {
-  margin: 5%;
+    margin: 5%;
 }
 .thumbnail {
-  width: 100%;
-  height: auto;
-  transition: all 0.3s ease;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
 }
 .thumbnail.attention {
-  filter: blur(6px);
+    filter: blur(6px);
 }
 .title {
-  opacity: 0%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  margin: auto;
-  font-size: 70%;
-  z-index: 1;
-  color: white;
-  transition: all 0.3s ease;
-}
-.title.visible {
-  opacity: 100%;
-  font-size: 1.5rem;
+    opacity: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    font-size: 70%;
+    z-index: 1;
+    color: white;
+    transition: all 0.3s ease;
 }
 .tag {
   margin-top: 8px;
   margin-bottom: 0px;
 }
+.title.visible {
+    opacity: 100%;
+    font-size: 1.5rem;
+}
+.tag {
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
 .background {
-  background-color: #333333;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-}
-.page-enter-active .content,
-.page-leave-active .content{
-  opacity: 1;
-}
-.page-enter .content,
-.page-leave-active .content{
-  opacity: 0;
+    background-color: #333333;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 </style>

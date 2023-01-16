@@ -1,79 +1,81 @@
 <template>
-  <div class="background">
-    <b-container class="text-center">
-      <div class="icon-img ">
-        <nuxt-picture :imgAttrs="{class: 'w-100'}" src="/icon.png" />
-      </div>
-      <b-row class="mt-5 mb-4">
-        <b-col>
-          <b-btn squared class="btn btn-outline-light px-5" href="Works"
-            >WORKS</b-btn
-          >
-        </b-col>
-        <b-col>
-          <b-btn squared class="btn btn-outline-light px-5" href="About"
-            >ABOUT</b-btn
-          >
-        </b-col>
-        <b-col>
-          <b-btn
-            squared
-            class="btn btn-outline-light px-5"
-            href="Commission"
-            >COMMISSION</b-btn
-          >
-        </b-col>
-      </b-row>
-      <b-row class="mt-4">
-        <b-col>
-          <b-btn
-            class="btn btn-outline-light"
-            href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg"
-            target="_blank"
-            style="font-size: 2em"
-            ><b-icon icon="youtube"></b-icon
-          ></b-btn>
-        </b-col>
-        <b-col>
-          <b-btn
-            class="btn btn-outline-light"
-            href="https://twitter.com/ka3de_Rain"
-            target="_blank"
-            style="font-size: 2em"
-            ><b-icon icon="twitter" style="margin-bottom: 2px"></b-icon
-          ></b-btn>
-        </b-col>
-      </b-row>
-    </b-container>
-  </div>
+    <div>
+        <div class="background"></div>
+        <transition>
+            <div class="content">
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        class="embed-responsive-item"
+                        src="https://www.youtube-nocookie.com/embed/MBftCfroEjI?rel=0&player.setVolume(5)"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="my-5 flex-profile">
+                    <b-img
+                        width="200px"
+                        rounded="circle"
+                        src="/icon_1x1.jpg"
+                    ></b-img>
+                    <div class="text-white">
+                        <h1>紙雨 楓</h1>
+                        <p>Kaede Kamisame</p>
+                        <p>
+                            BlenderやAfterEffectsなどを駆使し、3DCG作品やMotionGraphics作品を制作しています。
+                        </p>
+                        <div class="flex-button">
+                            <a href="https://twitter.com/ka3de_Rain" target="_blank" class="btn btn-primary text-decoration-none">Twitter</a>
+                            <a href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg" target="_blank" class="btn btn-danger text-decoration-none">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </transition>
+    </div>
 </template>
 
 <script>
 import { BIcon, BIconYoutube, BIconTwitter } from "bootstrap-vue";
-
+import NavBar from "~/components/Navbar.vue";
 export default {
-  components: {
-    BIcon,
-    BIconYoutube,
-    BIconTwitter,
-  },
+    components: {
+        NavBar,
+        BIcon,
+        BIconYoutube,
+        BIconTwitter,
+    },
+    head() {
+        return {
+            title: 'About',
+            meta: [
+                {
+                    hid: 'og:title',
+                    property: 'og:title',
+                    content: 'About｜Kaede Kamisame',
+                },
+            ],
+        }
+    }
 };
 </script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
-
-.background {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.flex-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
 
-.icon-img {
-  max-width: 400px;
-  padding: 0 2em;
-  margin: 0 auto;
+@media (max-width: 576px) {
+    .flex-profile {
+        flex-direction: column;
+    }
+ }
+
+.flex-button {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
 }
 </style>
