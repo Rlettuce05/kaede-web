@@ -51,6 +51,23 @@
     </div>
 </template>
 
+<script>
+export default {
+    head() {
+        return {
+            title: 'Commission',
+            meta: [
+                {
+                    hid: 'og:title',
+                    property: 'og:title',
+                    content: 'Commission｜Kaede Kamisame',
+                },
+            ],
+        }
+    }
+}
+</script>
+
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
 

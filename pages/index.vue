@@ -43,6 +43,18 @@ export default {
         BIconYoutube,
         BIconTwitter,
     },
+    head() {
+        return {
+            title: 'About',
+            meta: [
+                {
+                    hid: 'og:title',
+                    property: 'og:title',
+                    content: 'About｜Kaede Kamisame',
+                },
+            ],
+        }
+    }
 };
 </script>
 

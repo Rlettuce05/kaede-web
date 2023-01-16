@@ -106,6 +106,18 @@ export default {
             }
         },
     },
+    head() {
+        return {
+            title: 'Works',
+            meta: [
+                {
+                    hid: 'og:title',
+                    property: 'og:title',
+                    content: 'Works｜Kaede Kamisame',
+                },
+            ],
+        }
+    }
 };
 </script>
 
