@@ -1,51 +1,72 @@
 [
-	{
-		"id": "TerminalExistenceHypothesis",
-		"title": "終末的存在仮説",
-		"tag": "CG",
-		"link": "https://www.youtube.com/watch?v=vzvc_UhZx1w",
-		"img": "terminalexistencehypothesis.png"
-	},
-	{
-		"id": "MalikBash",
-		"title": "Malik Bash",
-		"tag": "CG",
-		"link": "https://www.youtube.com/watch?v=6_VPndlXjzc",
-		"img": "malikbash.png"
-	},
-	{
-		"id": "Initialized",
-		"title": "Initialized",
-		"tag": "XFD",
-		"link": "https://www.youtube.com/watch?v=hkGKqvrtu8U",
-		"img": "initialized.png"
-	},
-	{
-		"id": "IllustYeah!",
-		"title": "IllustYeah!",
-		"tag": "XFD",
-		"link": "https://www.youtube.com/watch?v=89Bg1SKuOD8",
-		"img": "illustyeah.png"
-	},
-	{
-		"id": "Ivory",
-		"title": "アイボリー",
-		"tag": "MV",
-		"link": "https://www.youtube.com/watch?v=0puparCl30k",
-		"img": "ivory.png"
-	},
-	{
-		"id": "CommonWorldDomination",
-		"title": "ありふれたせかいせいふく",
-		"tag": "MV",
-		"link": "https://youtu.be/qpapXGEgxcE",
-		"img": "commonworlddomination.png"
-	},
-	{
-		"id": "showreel",
-		"title": "紙雨楓showreel",
-		"tag": "REEL",
-		"link": "https://www.youtube.com/watch?v=MBftCfroEjI",
-		"img": "showreel.png"
-	}
+  {
+    "id": "pamera",
+    "title": "パメラ",
+    "tag": "MV",
+    "link": "https://twitter.com/ka3de_Rain/status/1609867096636227586",
+    "img": "pamera.png"
+  },
+  {
+    "id": "mai",
+    "title": "舞（同期合作）",
+    "tag": "MV",
+    "link": "https://youtu.be/Y6xEKK-T4dU",
+    "img": "mai.png"
+  },
+  {
+    "id": "road-crossing",
+    "title": "踏切",
+    "tag": "CG",
+    "link": "https://twitter.com/ka3de_Rain/status/1612763682525544448",
+    "img": "road-crossing.png"
+  },
+  {
+    "id": "CommonWorldDomination",
+    "title": "ありふれたせかいせいふく",
+    "tag": "MV",
+    "link": "https://youtu.be/qpapXGEgxcE",
+    "img": "commonworlddomination.png"
+  },
+  {
+    "id": "TerminalExistenceHypothesis",
+    "title": "終末的存在仮説",
+    "tag": "CG",
+    "link": "https://www.youtube.com/watch?v=vzvc_UhZx1w",
+    "img": "terminalexistencehypothesis.png"
+  },
+  {
+    "id": "MalikBash",
+    "title": "Malik Bash",
+    "tag": "CG",
+    "link": "https://www.youtube.com/watch?v=6_VPndlXjzc",
+    "img": "malikbash.png"
+  },
+  {
+    "id": "IllustYeah!",
+    "title": "IllustYeah!",
+    "tag": "XFD",
+    "link": "https://www.youtube.com/watch?v=89Bg1SKuOD8",
+    "img": "illustyeah.png"
+  },
+  {
+    "id": "Ivory",
+    "title": "アイボリー",
+    "tag": "MV",
+    "link": "https://www.youtube.com/watch?v=0puparCl30k",
+    "img": "ivory.png"
+  },
+  {
+    "id": "Initialized",
+    "title": "Initialized",
+    "tag": "XFD",
+    "link": "https://www.youtube.com/watch?v=hkGKqvrtu8U",
+    "img": "initialized.png"
+  },
+  {
+    "id": "showreel",
+    "title": "紙雨楓showreel",
+    "tag": "REEL",
+    "link": "https://www.youtube.com/watch?v=MBftCfroEjI",
+    "img": "showreel.png"
+  }
 ]

@@ -8,7 +8,9 @@
                         <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
                         <b-col v-for="(work) in works" :key="work.id" class="p-0">
                             <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
-                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <div class="ratio ratio-16x9">
+                                    <b-img :src="require(`@/static/works/${work.img}`)" style="object-fit: contain;"></b-img>
+                                </div>
                                 <p class="fs-5 mt-2">{{ work.title }}</p>
                             </a>
                         </b-col>
@@ -20,7 +22,9 @@
                         <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
                         <b-col v-for="(work) in mv" :key="work.id" class="p-0">
                             <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
-                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <div class="ratio ratio-16x9">
+                                    <b-img :src="require(`@/static/works/${work.img}`)" style="object-fit: contain;"></b-img>
+                                </div>
                                 <p class="fs-5 mt-2">{{ work.title }}</p>
                             </a>
                         </b-col>
@@ -32,7 +36,9 @@
                         <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
                         <b-col v-for="(work) in cg" :key="work.id" class="p-0">
                             <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
-                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <div class="ratio ratio-16x9">
+                                    <b-img :src="require(`@/static/works/${work.img}`)" style="object-fit: contain;"></b-img>
+                                </div>
                                 <p class="fs-5 mt-2">{{ work.title }}</p>
                             </a>
                         </b-col>
@@ -44,7 +50,9 @@
                         <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
                         <b-col v-for="(work) in xfd" :key="work.id" class="p-0">
                             <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
-                                <b-img :src="require(`@/static/works/${work.img}`)" :class="{'thumbnail': true}"></b-img>
+                                <div class="ratio ratio-16x9">
+                                    <b-img :src="require(`@/static/works/${work.img}`)" style="object-fit: contain;"></b-img>
+                                </div>
                                 <p class="fs-5 mt-2">{{ work.title }}</p>
                             </a>
                         </b-col>
