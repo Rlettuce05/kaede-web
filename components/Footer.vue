@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>&copy; 2023 紙雨楓 Design by RLettuce</p>
+        <p>&copy; 2023 紙雨楓 Designed by RLettuce</p>
     </div>
 </template>
 
