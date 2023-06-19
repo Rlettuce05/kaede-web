@@ -11,10 +11,10 @@
                             ミュージックビデオや歌ってみた動画、BGAなど幅広くお取り扱いできます。
                         </p>
                         <p>
-                            まずはお気軽にTwitterのDMまでお問い合わせください。
+                            まずはお気軽にメールにてお問い合わせください。
                         </p>
                     </div>
-                    <a href="https://twitter.com/ka3de_Rain" target="_blank" class="btn btn-primary text-decoration-none">Twitter</a>
+                    <a href="mailto:me@ka3de.work" target="_blank" class="btn btn-primary text-decoration-none">メールを開く</a>
                 </div>
                 <div class="mb-5">
                     <h2>依頼の流れ</h2>
