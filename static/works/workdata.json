@@ -1,4 +1,11 @@
 [
+    {
+        "id": "showreel",
+        "title": "showreel2023",
+        "tag": "REEL",
+        "link": "https://youtu.be/g8isO2wQM7Y",
+        "img": "showreel.png"
+    },
 	{
         "id": "aoiromerimento",
         "title": "碧イロめりめんと！！/碧唯ネネ",
@@ -82,12 +89,5 @@
         "tag": "XFD",
         "link": "https://www.youtube.com/watch?v=hkGKqvrtu8U",
         "img": "initialized.png"
-    },
-    {
-        "id": "showreel",
-        "title": "紙雨楓showreel",
-        "tag": "REEL",
-        "link": "https://www.youtube.com/watch?v=MBftCfroEjI",
-        "img": "showreel.png"
     }
 ]
