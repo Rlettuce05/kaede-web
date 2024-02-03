@@ -45,10 +45,10 @@
                     </b-row>
                     </b-container>
                 </b-tab>
-                <b-tab title="XFD" :title-link-class="linkClass(3)">
+                <b-tab title="Other" :title-link-class="linkClass(3)">
                     <b-container>
                         <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
-                        <b-col v-for="(work) in xfd" :key="work.id" class="p-0">
+                        <b-col v-for="(work) in other" :key="work.id" class="p-0">
                             <a v-bind:href="work.link" class="text-decoration-none text-white" target="_blank">
                                 <div class="ratio ratio-16x9">
                                     <b-img :src="require(`@/static/works/${work.img}`)" style="object-fit: contain;"></b-img>
@@ -75,7 +75,7 @@ export default {
         const works = require("~/static/works/workdata.json");
         const reel = [];
         const cg = [];
-        const xfd = [];
+        const other = [];
         const mv = [];
         for (let i = 0; i < works.length; i++) {
             const a = works[i].tag;
@@ -83,8 +83,8 @@ export default {
                 reel.push(works[i]);
             } else if (a === "CG") {
                 cg.push(works[i]);
-            } else if (a === "XFD") {
-                xfd.push(works[i]);
+            } else if (a === "OTHER") {
+                other.push(works[i]);
             } else if (a === "MV") {
                 mv.push(works[i]);
             }
@@ -92,7 +92,7 @@ export default {
         return {
             reel,
             cg,
-            xfd,
+            other,
             mv,
             works,
             hover: [],

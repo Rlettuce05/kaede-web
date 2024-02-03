@@ -2,7 +2,7 @@
     {
         "id": "showreel",
         "title": "showreel2023",
-        "tag": "REEL",
+        "tag": "OTHER",
         "link": "https://youtu.be/g8isO2wQM7Y",
         "img": "showreel.png"
     },
@@ -23,7 +23,7 @@
     {
         "id": "polka",
         "title": "尾丸ポルカ3周年 背景および歌詞演出",
-        "tag": "XFD",
+        "tag": "OTHER",
         "link": "https://www.youtube.com/live/EDWxOuVDUJk?si=mrdXbzFpHz3S7DJx",
         "img": "polka.png"
     },
@@ -51,7 +51,7 @@
     {
         "id": "starrycherrypv",
         "title": "StarryCherry1期生 デビューティザーPV",
-        "tag": "XFD",
+        "tag": "OTHER",
         "link": "https://youtu.be/PcOAajX4bIU",
         "img": "starrycherrypv.png"
     },
@@ -114,14 +114,14 @@
     {
         "id": "IllustYeah!",
         "title": "IllustYeah!",
-        "tag": "XFD",
+        "tag": "OTHER",
         "link": "https://www.youtube.com/watch?v=89Bg1SKuOD8",
         "img": "illustyeah.png"
     },
     {
         "id": "Initialized",
         "title": "Initialized",
-        "tag": "XFD",
+        "tag": "OTHER",
         "link": "https://www.youtube.com/watch?v=hkGKqvrtu8U",
         "img": "initialized.png"
     }
