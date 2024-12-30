@@ -17,6 +17,7 @@
                     </b-row>
                     </b-container>
                 </b-tab>
+                <!--
                 <b-tab title="MV" :title-link-class="linkClass(1)">
                     <b-container>
                         <b-row class="mt-3" cols="1" cols-md="2" cols-lg="3">
@@ -59,6 +60,7 @@
                     </b-row>
                     </b-container>
                 </b-tab>
+                -->
             </b-tabs>
         </transition>
     </div>
