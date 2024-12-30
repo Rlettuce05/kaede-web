@@ -22,7 +22,7 @@
     },
     {
         "id": "polka",
-        "title": "尾丸ポルカ3周年 背景および歌詞演出",
+        "title": "尾丸ポルカ3周年ライブ 背景及び歌詞演出",
         "tag": "OTHER",
         "link": "https://www.youtube.com/live/EDWxOuVDUJk?si=mrdXbzFpHz3S7DJx",
         "img": "polka.png"
@@ -33,13 +33,6 @@
         "tag": "MV",
         "link": "https://youtu.be/cG9QZT7I_P4",
         "img": "1plus1equalsinf.png"
-    },
-    {
-        "id": "motherland",
-        "title": "Motherland / 碧唯ネネ (Cover)",
-        "tag": "MV",
-        "link": "https://youtu.be/y0jkvMRq6Qk",
-        "img": "motherland.png"
     },
 	{
         "id": "aoiromerimento",
@@ -103,26 +96,5 @@
         "tag": "CG",
         "link": "https://youtu.be/vzvc_UhZx1w?t=96",
         "img": "terminalexistencehypothesis.png"
-    },
-    {
-        "id": "MalikBash",
-        "title": "Malik Bash",
-        "tag": "CG",
-        "link": "https://www.youtube.com/watch?v=6_VPndlXjzc",
-        "img": "malikbash.png"
-    },
-    {
-        "id": "IllustYeah!",
-        "title": "IllustYeah!",
-        "tag": "OTHER",
-        "link": "https://www.youtube.com/watch?v=89Bg1SKuOD8",
-        "img": "illustyeah.png"
-    },
-    {
-        "id": "Initialized",
-        "title": "Initialized",
-        "tag": "OTHER",
-        "link": "https://www.youtube.com/watch?v=hkGKqvrtu8U",
-        "img": "initialized.png"
     }
 ]
