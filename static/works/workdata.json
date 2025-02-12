@@ -1,5 +1,19 @@
 [
     {
+        "id": "sakamoto",
+        "title": "サカモトデイズ渋谷13面連動デジタルサイネージ",
+        "tag": "OTHER",
+        "link": "https://www.tiktok.com/@shibuyanews/video/7459762918725291284",
+        "img": "sakamoto.png"
+    },
+    {
+        "id": "lonely",
+        "title": "山崎エリイ「ロンリーパーティーナイト」MUSIC VIDEO",
+        "tag": "MV",
+        "link": "http://youtube.com/watch?v=zsAPmeV5ylE",
+        "img": "lonely.png"
+    },
+    {
         "id": "H+",
         "title": "Hey! Say! JUMP – “H+”ティザー映像",
         "tag": "OTHER",
